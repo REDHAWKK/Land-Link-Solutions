@@ -1,0 +1,23 @@
+{
+  "name": "land-link-solutions",
+  "version": "1.0.0",
+  "description": "The official website for the real estate comapny LandLink Solutions",
+  "keywords": [
+    "LandLink",
+    "Link",
+    "Land",
+    "LandLinkSolutions"
+  ],
+  "license": "ISC",
+  "author": "ORIAREBUN PRINCETON",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./Css/styles.css -o ./Css/tailwind.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}

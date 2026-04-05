@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!--Meta tags and SEO optimization-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Land Link Solutions helps you buy, sell, and invest in premium properties with confidence. Trusted real estate experts connecting you to the right land and homes.">
+    <meta name="keywords" content="real estate, land for sale, property investment, buy land, sell property, Land Link Solutions">
+    <meta name="author" content="Land Link Solutions">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Land Link Solutions | Real Estate You Can Trust">
+    <meta property="og:description" content="Connecting you to the best land and property opportunities. Buy, sell, and invest with confidence.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/images/real-estate-preview.jpg">
+
+    <!-- Title -->
+    <title>Land Link Solutions | Connecting You With Your Dream Property</title>
+
+    <!--Styling Links-->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/tailwind.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body class="antialiased">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-container">
+            <div class="loader-ring"></div>
+            <h3 class="text-lg font-medium" style="color: var(--primary-color);">Land Link Solutions</h3>
+            <p style="color: #666;">Connecting you with your dream property</p>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky-header pt-4 pb-4 px-6 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="flex items-center">
+    <img src="Images/d-logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+
+    <div class="ml-3">
+        <h1 class="text-xl font-bold font-serif" style="color: var(--primary-color);">
+            Land Link
+        </h1>
+        <p class="text-sm text-gray-600">Solutions</p>
+    </div>
+</div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium">About</a>
+                <a href="#properties" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium">Properties</a>
+                <a href="#testimonials" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium">Contact</a>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-gray-800 focus:outline-none">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 px-6 pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium py-2">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium py-2">About</a>
+                <a href="#properties" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium py-2">Properties</a>
+                <a href="#testimonials" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium py-2">Testimonials</a>
+                <a href="#contact" class="text-gray-800 hover:text-[var(--primary-color)] transition-colors font-medium py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-14 pb-20 min-h-screen flex items-center relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-[var(--primary-color)] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-[var(--secondary-color)] rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="text-[var(--primary-color)] font-medium mb-6 uppercase tracking-wide">Land Link Solutions</h2>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight font-serif" style="color: var(--dark-color);">
+                        Connecting You <span class="text-[var(--primary-color)]">To Your Dream Property</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-700 leading-relaxed max-w-lg">
+                        Land Link Solutions offers exclusive properties that combine elegance, comfort, and location. Experience luxury living with our premium real estate portfolio.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#properties" class="btn-royal px-8 py-4 rounded-lg font-medium text-center flex items-center justify-center">
+                            <span>Explore Properties</span>
+                            <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </a>
+                        <a href="#contact" class="btn-outline px-8 py-4 rounded-lg font-medium text-center">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-all duration-500">
+                        <img src="Images/img1.png" alt="Luxury Estate" class="w-full h-auto" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
+                            <p class="text-white text-lg font-serif">"Luxury Living Redefined"</p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-10 -left-10 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden lg:block">
+                        <h3 class="text-[var(--primary-color)] font-bold mb-2">Why Choose Us?</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-[var(--primary-color)] mr-3"></i>
+                                <span>Premium Properties</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-[var(--primary-color)] mr-3"></i>
+                                <span>Expert Team</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-[var(--primary-color)] mr-3"></i>
+                                <span>Secured Transactions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold font-serif" style="color: var(--dark-color);">
+                    About <span class="text-[var(--primary-color)]">Land Link Solutions</span>
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
+                    We specialize in connecting discerning clients with properties that reflect their lifestyle and status. With over 15 years of experience in the luxury real estate market, we've built a reputation for excellence, integrity, and unparalleled service.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-20">
+                <div class="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300 card-gold">
+                    <div class="feature-icon">
+                        <i data-lucide="crown" class="w-10 h-10 text-[var(--primary-color)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--dark-color);">Premium Properties</h3>
+                    <p class="text-gray-600">Our exclusive portfolio features only the most exceptional homes, estates, and investment opportunities that meet our strict quality standards.</p>
+                </div>
+
+                <div class="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300 card-gold">
+                    <div class="feature-icon">
+                        <i data-lucide="users" class="w-10 h-10 text-[var(--primary-color)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--dark-color);">Client-Centric Service</h3>
+                    <p class="text-gray-600">We understand that finding the perfect property is a deeply personal journey. Our dedicated team provides personalized service tailored to your needs.</p>
+                </div>
+
+                <div class="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300 card-gold">
+                    <div class="feature-icon">
+                        <i data-lucide="award" class="w-10 h-10 text-[var(--primary-color)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--dark-color);">Industry Excellence</h3>
+                    <p class="text-gray-600">Our team consists of certified professionals with deep market knowledge and a proven track record of successful transactions.</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-[var(--secondary-color)] to-[var(--light-color)] rounded-3xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <h3 class="text-3xl font-bold mb-6" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">
+                            Our Mission is to <span class="text-[var(--primary-color)]">Bridge</span> the Gap Between Dream and Reality
+                        </h3>
+                        <p class="text-gray-700 mb-6 text-lg">
+                            At Land Link Solutions, we believe that your home is more than just a property—it's a reflection of your aspirations and achievements. Our mission is to connect high-net-worth individuals and families with properties that embody their success and lifestyle preferences.
+                        </p>
+                        <p class="text-gray-700 mb-8 text-lg">
+                            We combine market expertise with personalized service to ensure every transaction is seamless, confidential, and tailored to your unique requirements.
+                        </p>
+                        <a href="#about" class="btn-royal px-8 py-3 rounded-lg inline-block font-medium">Learn More</a>
+                    </div>
+                    <div class="relative" data-aos="fade-left">
+                        <div class="rounded-2xl overflow-hidden shadow-xl">
+                            <img src="Images/logo.png" alt="Office" class="w-full" loading="lazy">
+                        </div>
+                        <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-2xl max-w-xs hidden lg:block">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-[var(--primary-color)] flex items-center justify-center mr-4">
+                                    <i data-lucide="star" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold" style="color: var(--dark-color);">5-Star Service</h4>
+                                    <p class="text-sm text-gray-600">Client Satisfaction Guaranteed</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 italic">"The most professional and trustworthy real estate team we've worked with. Their attention to detail is exceptional."</p>
+                            <p class="mt-4 text-[var(--primary-color)] font-bold">— Robert & Sarah Mitchell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section id="properties" class="py-20 bg-[var(--light-color)]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold font-serif" style="color: var(--dark-color);">
+                    Featured <span class="text-[var(--primary-color)]">Properties</span>
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
+                    Explore our curated collection of exceptional properties, from luxurious homes to prime investment opportunities.
+                </p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mb-12 bg-white rounded-2xl p-8 shadow-xl">
+                <h3 class="text-2xl font-bold mb-6 text-center" style="color: var(--dark-color);">Find Your Perfect Property</h3>
+                <div class="flex flex-col md:flex-row gap-4 items-center">
+                    <div class="w-full md:w-2/3 relative">
+                        <i data-lucide="search" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+                        <input type="text" id="search-bar" class="w-full pl-12 pr-4 py-4 rounded-xl border border-gray-200 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 search-input transition-all" placeholder="Search by location, property type, or keywords...">
+                    </div>
+                    <button id="search-btn" class="w-full md:w-auto px-8 py-4 bg-[var(--primary-color)] text-white rounded-xl hover:bg-[var(--primary-dark)] transition-colors font-bold flex items-center justify-center">
+                        <span>Search Properties</span>
+                        <i data-lucide="search" class="ml-2 w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Property Category Filters -->
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="all">All Properties</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="house">Luxury Houses</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="apartment">Premium Apartments</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="villa">Exclusive Villas</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="commercial">Commercial</button>
+                </div>
+            </div>
+
+            <!-- Available Properties -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 text-center" style="color: var(--dark-color);">Available Properties</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="available-properties">
+                    <!-- Available Property Card 1 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group" data-category="house">
+                        <div class="relative">
+                            <img src="http://static.photos/nature/640x360/112" alt="Luxury Villa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">For Sale</div>
+                            <div class="feature-tag">Luxury Villa</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Prime Location</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Fairfield Estate</h4>
+                                <div class="bg-[var(--primary-color)] text-white px-3 py-1 rounded-full text-sm font-medium">$2,450,000</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>5 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>4 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>4,200 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">An elegant villa featuring modern luxury, panoramic views, and premium amenities in the heart of the city.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Available Property Card 2 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group" data-category="apartment">
+                        <div class="relative">
+                            <img src="http://static.photos/office/640x360/87" alt="Premium Apartment" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">For Sale</div>
+                            <div class="feature-tag">Premium Apartment</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Downtown District</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Skyline Residences</h4>
+                                <div class="bg-[var(--primary-color)] text-white px-3 py-1 rounded-full text-sm font-medium">$895,000</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>2 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>2 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>1,800 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Modern luxury apartment with stunning city views, high-end finishes, and premium building amenities.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Available Property Card 3 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group" data-category="villa">
+                        <div class="relative">
+                            <img src="http://static.photos/landscape/640x360/39" alt="Exclusive Villa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">For Sale</div>
+                            <div class="feature-tag">Exclusive Villa</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Seaside Community</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Ocean Breeze Villa</h4>
+                                <div class="bg-[var(--primary-color)] text-white px-3 py-1 rounded-full text-sm font-medium">$3,750,000</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>6 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>5 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>5,400 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Exclusive waterfront villa with private beach access, infinity pool, and luxury amenities.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sold/Rented Properties -->
+            <div>
+                <h3 class="text-3xl font-bold mb-8 text-center" style="color: var(--dark-color);">Recent Transactions</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Sold Property Card 1 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group relative" data-category="commercial">
+                        <div class="relative">
+                            <img src="http://static.photos/architecture/640x360/154" alt="Commercial Property" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">
+                                <span class="flex items-center">
+                                    <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i>
+                                    Sold
+                                </span>
+                            </div>
+                            <div class="feature-tag">Commercial</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Business District</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Downtown Office Complex</h4>
+                                <div class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-medium">$1.2M</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="building" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>15,000 sqft</span>
+                                <i data-lucide="landmark" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>8 Floors</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Prime commercial property in the business district, fully renovated with modern facilities.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sold Property Card 2 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group relative" data-category="house">
+                        <div class="relative">
+                            <img src="http://static.photos/interior/640x360/72" alt="Modern Home" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">
+                                <span class="flex items-center">
+                                    <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i>
+                                    Sold
+                                </span>
+                            </div>
+                            <div class="feature-tag">Modern Home</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Green Valley</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Serenity Valley Home</h4>
+                                <div class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-medium">$1,350,000</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>4 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>3 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>3,200 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Stunning modern home in a private setting, featuring eco-friendly design and luxury finishes.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Rented Property Card -->
+                    <div class="card-gold rounded-2xl overflow-hidden group relative" data-category="apartment">
+                        <div class="relative">
+                            <img src="http://static.photos/interior/640x360/167" alt="Luxury Apartment" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag">
+                                <span class="flex items-center">
+                                    <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i>
+                                    Rented
+                                </span>
+                            </div>
+                            <div class="feature-tag">Premium Apartment</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Grand Plaza</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Grand Plaza Suite</h4>
+                                <div class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">$4,500/mo</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>3 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>2.5 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>2,100 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Luxury rental in the heart of the city, offering premium amenities and exceptional service.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold font-serif" style="color: var(--dark-color);">
+                    Why <span class="text-[var(--primary-color)]">Choose Us</span>
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
+                    We provide unparalleled service and expertise to make your real estate journey seamless and successful.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i data-lucide="shield-check" class="w-10 h-10 text-[var(--primary-color)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--dark-color);">Secure Transactions</h3>
+                    <p class="text-gray-600">We ensure all transactions are handled with the utmost confidentiality and security, protecting your interests at every step.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i data-lucide="zap" class="w-10 h-10 text-[var(--primary-color)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--dark-color);">Fast Process</h3>
+                    <p class="text-gray-600">Our streamlined process ensures quick and efficient transactions, getting you into your dream property faster.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i data-lucide="star" class="w-10 h-10 text-[var(--primary-color)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--dark-color);">Premium Properties</h3>
+                    <p class="text-gray-600">Access our exclusive portfolio of luxury properties that meet our strict quality and luxury standards.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i data-lucide="users" class="w-10 h-10 text-[var(--primary-color)]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--dark-color);">Expert Team</h3>
+                    <p class="text-gray-600">Our certified professionals bring deep market knowledge and personalized service to every transaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-[var(--light-color)]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold font-serif" style="color: var(--dark-color);">
+                    Client <span class="text-[var(--primary-color)]">Stories</span>
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
+                    Hear what our satisfied clients have to say about their experience with Land Link Solutions.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonials bg-white p-8 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-4" style="font-family: 'Playfair Display', serif; color: var(--dark-color);">"Exceptional Service"</h3>
+                    <p class="text-gray-600 mb-6">"Land Link Solutions handled the purchase of our dream villa with such professionalism and attention to detail. Their knowledge of the market and negotiation skills saved us significant money."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-[var(--primary-color)] flex items-center justify-center mr-4">
+                            <i data-lucide="user" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold" style="color: var(--dark-color);">Michael & Sarah Thompson</h4>
+                            <p class="text-gray-500 text-sm"> vip Client since 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonials bg-white p-8 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4" style="font-family: 'Playfair Display', serif; color: var(--dark-color);">"Trusted Partners"</h3>
+                    <p class="text-gray-600 mb-6">"Working with Land Link Solutions was the best decision we made during our property search. They understood our needs perfectly and found us the ideal investment property."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-[var(--primary-color)] flex items-center justify-center mr-4">
+                            <i data-lucide="user" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold" style="color: var(--dark-color);">James & Elizabeth Carter</h4>
+                            <p class="text-gray-500 text-sm">Property Investors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonials bg-white p-8 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-2xl font-bold mb-4" style="font-family: 'Playfair Display', serif; color: var(--dark-color);">"World-Class Experience"</h3>
+                    <p class="text-gray-600 mb-6">"The level of service we received was extraordinary. From property selection to final closing, every step was handled with precision and care. Highly recommended!'"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-[var(--primary-color)] flex items-center justify-center mr-4">
+                            <i data-lucide="user" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold" style="color: var(--dark-color);">David & Lisa Anderson</h4>
+                            <p class="text-gray-500 text-sm">First-time Homebuyers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-[var(--primary-color)] relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full">
+                <svg width="100%" height="100%">
+                    <pattern id="pattern-circles" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                        <circle cx="50" cy="50" r="2" fill="white" />
+                    </pattern>
+                    <rect width="100%" height="100%" fill="url(#pattern-circles)" />
+                </svg>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-8" style="font-family: 'Playfair Display', serif;">
+                    Ready to Find Your Dream Property?
+                </h2>
+                <p class="text-white/90 text-xl mb-10">
+                    Contact Land Link Solutions today for a confidential consultation about your real estate needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-white text-[var(--primary-color)] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors text-center">
+                        Schedule Consultation
+                    </a>
+                    <a href="tel:+1234567890" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-colors text-center">
+                        Call Us: +1 (234) 567-890
+                    </a>
+                </div>
+                <p class="text-white/70 mt-8 text-sm">Available 24/7 for your convenience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold font-serif" style="color: var(--dark-color);">
+                    Get In <span class="text-[var(--primary-color)]">Touch</span>
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
+                    Our team is ready to help you find your perfect property or assist with your real estate needs.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-[var(--light-color)] rounded-3xl p-8 md:p-12">
+                    <h3 class="text-2xl font-bold mb-6" style="color: var(--dark-color);">Send Us a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 transition-all" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 transition-all" placeholder="john@example.com" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 transition-all" placeholder="+1 (234) 567-890">
+                        </div>
+                        <div>
+                            <label for="property-type" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Property Interest</label>
+                            <select id="property-type" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 transition-all">
+                                <option value="">Select Property Type</option>
+                                <option value="buy">Interested in Buying</option>
+                                <option value="rent">Interested in Renting</option>
+                                <option value="sell">Want to Sell Property</option>
+                                <option value="consult">Request Consultation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 transition-all" placeholder="Tell us about your property requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-royal w-full py-4 rounded-lg font-bold text-lg flex items-center justify-center">
+                            <span>Send Message</span>
+                            <i data-lucide="send" class="ml-2 w-5 h-5"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="text-center lg:text-left">
+                        <h3 class="text-2xl font-bold mb-6" style="color: var(--dark-color);">Contact Information</h3>
+                        <p class="text-gray-700 mb-8 text-lg">
+                            Our dedicated team is ready to assist you with your real estate needs. Whether you're looking to buy, sell, or rent, we provide personalized service to meet your requirements.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-[var(--primary-color)]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2" style="color: var(--dark-color);">Our Office</h4>
+                                <p class="text-gray-700">123 Luxury Boulevard, Suite 450<br>Metropolitan District, NY 10001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-[var(--primary-color)]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2" style="color: var(--dark-color);">Phone Numbers</h4>
+                                <p class="text-gray-700">Main Office: +1 (234) 567-890<br>Mobile: +1 (234) 567-891</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6 text-[var(--primary-color)]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2" style="color: var(--dark-color);">Email Address</h4>
+                                <p class="text-gray-700">info@landlinksolutions.com<br>concierge@landlinksolutions.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-[var(--primary-color)]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2" style="color: var(--dark-color);">Business Hours</h4>
+                                <p class="text-gray-700">Monday - Friday: 9:00 AM - 8:00 PM<br>Saturday: 10:00 AM - 6:00 PM<br>Sunday: 11:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-[var(--secondary-color)] to-[var(--light-color)] rounded-2xl p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i data-lucide="shield-check" class="w-12 h-12 text-[var(--primary-color)] mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1" style="color: var(--dark-color);">Trusted by 500+ Clients</h4>
+                                    <p class="text-sm text-gray-600">Serving the luxury real estate market since 2008</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-3xl font-bold" style="color: var(--primary-color);">450+</div>
+                                <div class="text-sm text-gray-600">Properties Sold</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-royal text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-16">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="text-[var(--primary-color)]">
+                            <i data-lucide="crown" class="w-8 h-8"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h1 class="text-xl font-bold font-serif">Land Link</h1>
+                            <p class="text-sm text-gray-400">Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Connecting you with your dream property through exceptional service, market expertise, and a commitment to excellence in every transaction.
+                    </p>
+                    <!-- <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div> -->
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">About Us</a></li>
+                        <li><a href="#properties" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Properties</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Properties -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Property Types</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Luxury Villas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Premium Apartments</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Exclusive Mansions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Commercial Properties</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Investment Opportunities</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-6">Subscribe to receive updates on new properties and market insights.</p>
+                    <div class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-[var(--primary-color)] focus:outline-none">
+                        <button class="btn-royal py-3 rounded-lg font-medium">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2023 Land Link Solutions. All rights reserved. | Luxury Real Estate Professionals
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="Js/script.js"></script>
+</body>
+</html>
