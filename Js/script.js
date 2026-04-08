@@ -1,29 +1,39 @@
-        // Initialize AOS
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Initialize AOS
+    if (typeof AOS !== "undefined") {
         AOS.init({
             duration: 1000,
             once: true,
             offset: 100,
         });
+    }
 
-        // Loader Animation
-        window.addEventListener('load', () => {
-            const loader = document.querySelector('.loader');
+    // Loader Animation
+    window.addEventListener('load', () => {
+        const loader = document.querySelector('.loader');
+        if (loader) {
             loader.style.opacity = '0';
             setTimeout(() => {
                 loader.style.display = 'none';
             }, 500);
-        });
+        }
+    });
 
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+    }
 
-        // Sticky Header
-        const navbar = document.getElementById('navbar');
+    // Sticky Header
+    const navbar = document.getElementById('navbar');
+
+    if (navbar) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -31,24 +41,22 @@
                 navbar.classList.remove('scrolled');
             }
         });
+    }
 
-        // Search Functionality
-        const searchBar = document.getElementById('search-bar');
-        const searchBtn = document.getElementById('search-btn');
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const propertyCards = document.querySelectorAll('.card-gold');
+    // Search + Filter Functionality
+    const searchBar = document.getElementById('search-bar');
+    const searchBtn = document.getElementById('search-btn');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const propertyCards = document.querySelectorAll('.card-gold');
 
-        // Search functionality
+    // Search
+    if (searchBtn && searchBar && propertyCards.length > 0) {
         searchBtn.addEventListener('click', () => {
             const searchTerm = searchBar.value.toLowerCase();
-            
+
             propertyCards.forEach(card => {
                 const text = card.textContent.toLowerCase();
-                if (text.includes(searchTerm)) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
+                card.classList.toggle('hidden', !text.includes(searchTerm));
             });
         });
 
@@ -58,18 +66,20 @@
                 searchBtn.click();
             }
         });
+    }
 
-        // Filter functionality
+    // Filters
+    if (filterBtns.length > 0 && propertyCards.length > 0) {
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Remove active class from all buttons
+
+                // Reset all buttons
                 filterBtns.forEach(b => {
-                    b.classList.remove('active:bg-[var(--primary-color)]', 'active:text-white');
                     b.classList.remove('bg-[var(--primary-color)]', 'text-white');
                     b.classList.add('bg-gray-100', 'text-gray-800');
                 });
 
-                // Add active class to clicked button
+                // Activate clicked button
                 btn.classList.remove('bg-gray-100', 'text-gray-800');
                 btn.classList.add('bg-[var(--primary-color)]', 'text-white');
 
@@ -86,31 +96,17 @@
                 });
             });
         });
+    }
 
-        // Form Submission
-        document.getElementById('contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Simulate form submission
-            const button = e.target.querySelector('button');
-            const originalText = button.innerHTML;
-            
-            button.innerHTML = '<i data-lucide="loader" class="w-5 h-5 animate-spin mr-2"></i> Sending...';
-            
-            setTimeout(() => {
-                button.innerHTML = '<i data-lucide="check-circle" class="w-5 h-5 mr-2"></i> Message Sent!';
-                
-                setTimeout(() => {
-                    button.innerHTML = originalText;
-                    e.target.reset();
-                    
-                    // Show success message
-                    alert('Thank you for contacting Land Link Solutions! Our team will get back to you shortly.');
-                }, 2000);
-            }, 1500);
-        });
-
-        // Initialize Lucide Icons
+    // Initialize Lucide Icons
+    if (typeof lucide !== "undefined") {
         lucide.createIcons();
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
+    }
+
+    // Set current year
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+
+});
