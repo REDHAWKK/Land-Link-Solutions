@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!--Meta tags and SEO optimization-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check out our properties. We are a team of experienced lawyers and engineers working across Edo State, Abuja, Lagos, Akwa Ibom, and Delta State. Our strength comes from combining legal expertise with technical insight to solve complex land challenges from every angle.">
+    <meta name="keywords" content="real estate, land for sale, property investment, buy land, sell property, Land Link Solutions">
+    <meta name="author" content="Land Link Solutions">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Check out Properties | Land Link Solutions | Real Estate You Can Trust">
+    <meta property="og:description" content="Check out our properties. Connecting you to the best land and property opportunities. Buy, sell, and invest with confidence.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://landlinksolutions.org">
+    <meta property="og:image" content="https://landlinksolutions.org/Images/dark-logo.png">
+
+    <!-- Title -->
+    <title>Properties | Land Link Solutions | Connecting You With Your Dream Property</title>
+
+    <!--Styling Links-->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/tailwind.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body class="antialiased">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-container">
+            <div class="loader-ring"></div>
+            <h3 class="text-lg font-medium" style="color: var(--primary-color);">Land Link Solutions</h3>
+            <p style="color: #666;">Connecting you with your dream property</p>
+        </div>
+    </div>
+    
+<!-- Navigation -->
+<nav id="navbar" class="sticky-header pt-4 pb-4 px-6 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="Images/nav-logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+            <div class="ml-3">
+                <h1 class="text-xl font-bold font-serif" style="color: var(--primary-color);">
+                    Land Link
+                </h1>
+                <p class="text-sm text-gray-600">Solutions</p>
+            </div>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                <i data-lucide="home" class="w-4 h-4"></i> Home
+            </a>
+            <a href="about.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                <i data-lucide="info" class="w-4 h-4"></i> About
+            </a>
+            <a href="properties.html" class=" nav-link active flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                <i data-lucide="building-2" class="w-4 h-4"></i> Properties
+            </a>
+            <a href="testimonials.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                <i data-lucide="message-square" class="w-4 h-4"></i> Testimonials
+            </a>
+            <a href="invest.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                <i data-lucide="trending-up" class="w-4 h-4"></i> Invest
+            </a>
+            <a href="contact.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                <i data-lucide="phone" class="w-4 h-4"></i> Contact
+            </a>
+        </div>
+        
+        <!-- Mobile Button -->
+        <div class="md:hidden">
+            <button id="mobile-menu-btn" class="text-gray-800 focus:outline-none cursor-pointer">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 px-6 pb-4">
+        <div class="flex flex-col space-y-3">
+            <a href="index.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
+                <i data-lucide="home" class="w-5 h-5"></i> Home
+            </a>
+            <a href="about.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
+                <i data-lucide="info" class="w-5 h-5"></i> About
+            </a>
+            <a href="properties.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
+                <i data-lucide="building-2" class="w-5 h-5"></i> Properties
+            </a>
+            <a href="testimonials.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
+                <i data-lucide="message-square" class="w-5 h-5"></i> Testimonials
+            </a>
+            <a href="invest.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
+                <i data-lucide="trending-up" class="w-5 h-5"></i> Invest
+            </a>
+            <a href="contact.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
+                <i data-lucide="phone" class="w-5 h-5"></i> Contact
+            </a>
+        </div>
+    </div>
+</nav>
+<section class="px-6 py-12 bg-white">
+
+  <!-- HERO -->
+  <div class="flex flex-col lg:flex-row justify-between gap-10 mb-10">
+
+    <div class="max-w-xl">
+      <span class="text-sm font-semibold text-green-600 uppercase tracking-wide">
+        Available Properties
+      </span>
+
+      <h1 class="text-4xl font-bold mt-3 leading-tight">
+        Prime Land.<br>
+        <span class="text-green-600">Endless Possibilities.</span>
+      </h1>
+
+      <p class="mt-4 text-gray-600">
+        Explore verified land opportunities in strategic locations.
+        Build, invest or hold for the future.
+      </p>
+    </div>
+
+<div class="grid grid-cols-2 gap-5">
+
+  <!-- CARD -->
+  <div class="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition">
+
+    <div class="p-2 rounded-lg bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
+      <i data-lucide="shield-check" class="w-5 h-5"></i>
+    </div>
+
+    <span class="font-medium text-gray-800">Verified Lands</span>
+  </div>
+
+  <!-- CARD -->
+  <div class="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition">
+
+    <div class="p-2 rounded-lg bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
+      <i data-lucide="map-pin" class="w-5 h-5"></i>
+    </div>
+
+    <span class="font-medium text-gray-800">Strategic Locations</span>
+  </div>
+
+  <!-- CARD -->
+  <div class="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition">
+
+    <div class="p-2 rounded-lg bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
+      <i data-lucide="file-text" class="w-5 h-5"></i>
+    </div>
+
+    <span class="font-medium text-gray-800">Clear Documentation</span>
+  </div>
+
+  <!-- CARD -->
+  <div class="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition">
+
+    <div class="p-2 rounded-lg bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
+      <i data-lucide="headphones" class="w-5 h-5"></i>
+    </div>
+
+    <span class="font-medium text-gray-800">Dedicated Support</span>
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- FILTER -->
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-10">
+
+    <select class="border rounded-lg p-3">
+      <option>All Locations</option>
+    </select>
+
+    <select class="border rounded-lg p-3">
+      <option>All Land Use</option>
+    </select>
+
+    <select class="border rounded-lg p-3">
+      <option>Any Size</option>
+    </select>
+
+    <select class="border rounded-lg p-3">
+      <option>Any Price</option>
+    </select>
+
+    <button class="bg-green-600 text-white rounded-lg p-3 hover:bg-green-700">
+      Search Lands
+    </button>
+
+  </div>
+
+  <!-- HEADER -->
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-semibold">Featured Lands</h2>
+
+  </div>
+
+  <!-- CARDS -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Land 1 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
+
+      <div class="relative">
+        <img src="images/land1.png" class="h-48 w-full object-cover">
+
+        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+          For Sale
+        </span>
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex justify-between items-start">
+          <h3 class="font-semibold text-lg">Obagie</h3>
+          <span class="text-green-600 font-bold">₦45,000,000</span>
+        </div>
+
+        <p class="text-sm text-gray-500 mt-1">Obagie, Benin Cityy</p>
+
+        <div class="flex justify-between text-xs text-gray-600 mt-4">
+          <span>600 SQM</span>
+          <span>Residential</span>
+          <span>C of O</span>
+        </div>
+
+        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
+          Best for: Residential homes, Estate development
+        </div>
+
+        <button onclick="openPropertyModal('golden-park')"
+        class="mt-4 w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black cursor-pointer">
+          View Details
+        </button>
+
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
+
+      <div class="relative">
+        <img src="images/land2.png" class="h-48 w-full object-cover">
+        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+          For Sale
+        </span>
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex justify-between items-start">
+          <h3 class="font-semibold text-lg">Epe Prime Land</h3>
+          <span class="text-green-600 font-bold">₦12,500,000</span>
+        </div>
+
+        <p class="text-sm text-gray-500 mt-1">Epe, Lagos</p>
+
+        <div class="flex justify-between text-xs text-gray-600 mt-4">
+          <span>500 SQM</span>
+          <span>Residential</span>
+          <span>Survey</span>
+        </div>
+
+        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
+          Best for: Gated estates, Land banking
+        </div>
+
+        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded-lg cursor-pointer hover:bg-black">
+          View Details
+        </button>
+
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
+
+      <div class="relative">
+        <img src="images/land3.png" class="h-48 w-full object-cover">
+        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+          For Sale
+        </span>
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex justify-between items-start">
+          <h3 class="font-semibold text-lg">Commercial Hub Land</h3>
+          <span class="text-green-600 font-bold">₦35,000,000</span>
+        </div>
+
+        <p class="text-sm text-gray-500 mt-1">Lekki-Epe Expressway</p>
+
+        <div class="flex justify-between text-xs text-gray-600 mt-4">
+          <span>1000 SQM</span>
+          <span>Commercial</span>
+          <span>C of O</span>
+        </div>
+
+        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
+          Best for: Malls, Offices, Commercial builds
+        </div>
+
+        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded-lg cursor-pointer hover:bg-black">
+          View Details
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="mt-12 flex flex-col md:flex-row justify-between items-center bg-gray-100 p-6 rounded-xl">
+
+    <div>
+      <h3 class="text-lg font-semibold">Don’t see what you’re looking for?</h3>
+      <p class="text-gray-600 text-sm">We can help you find the perfect land.</p>
+    </div>
+
+    <a href="contact.html" class="btn-royal mt-4 md:mt-0  px-6 py-3 rounded-lg cursor-pointer inline-block font-medium">
+      Request Consultation
+    </a>
+
+  </div>
+
+</section>
+
+        <!-- Footer -->
+    <footer class="footer-royal text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-16">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="text-[var(--primary-color)]">
+            <img src="Images/logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+                        </div>
+                        <div class="ml-3">
+                            <h1 class="text-xl font-bold font-serif">Land Link</h1>
+                            <p class="text-sm text-gray-400">Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.
+                    </p>
+                    <!-- <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div> -->
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">About Us</a></li>
+                        <li><a href="properties.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Properties</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Properties -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Property Types</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Luxury Villas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Premium Apartments</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Exclusive Mansions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Commercial Properties</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Investment Opportunities</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-6">Subscribe to receive updates on new properties and market insights.</p>
+                    <div class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-[var(--primary-color)] focus:outline-none">
+                        <button class="btn-royal py-3 rounded-lg font-medium">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-gray-400">
+                    © <span id="year"></span> Land Link Solutions. All rights reserved. | Produced By <a href="https://oriarebun-princeton.vercel.app/" target="_blank" class="text-[var(--primary-color)] hover:underline">Oriarebun Princeton</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="Js/properties.js"></script>
+<script src="Js/script.js"></script>
+</body>
+</html>
