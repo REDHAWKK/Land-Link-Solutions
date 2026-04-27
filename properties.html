@@ -63,9 +63,9 @@
             <a href="properties.html" class=" nav-link active flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
                 <i data-lucide="building-2" class="w-4 h-4"></i> Properties
             </a>
-            <a href="testimonials.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+            <!-- <a href="testimonials.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
                 <i data-lucide="message-square" class="w-4 h-4"></i> Testimonials
-            </a>
+            </a> -->
             <a href="invest.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
                 <i data-lucide="trending-up" class="w-4 h-4"></i> Invest
             </a>
@@ -94,9 +94,9 @@
             <a href="properties.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
                 <i data-lucide="building-2" class="w-5 h-5"></i> Properties
             </a>
-            <a href="testimonials.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
+            <!-- <a href="testimonials.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
                 <i data-lucide="message-square" class="w-5 h-5"></i> Testimonials
-            </a>
+            </a> -->
             <a href="invest.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
                 <i data-lucide="trending-up" class="w-5 h-5"></i> Invest
             </a>
@@ -127,9 +127,9 @@
       </p>
     </div>
 
-<div class="grid grid-cols-2 gap-5">
+<div class="grid grid-cols-1 grid-cols-2 gap-5">
 
-  <!-- CARD -->
+  <!-- HERO CARD 1-->
   <div class="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition">
 
     <div class="p-2 rounded-lg bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
@@ -139,7 +139,7 @@
     <span class="font-medium text-gray-800">Verified Lands</span>
   </div>
 
-  <!-- CARD -->
+  <!-- HERO CARD 2 -->
   <div class="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition">
 
     <div class="p-2 rounded-lg bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
@@ -149,7 +149,7 @@
     <span class="font-medium text-gray-800">Strategic Locations</span>
   </div>
 
-  <!-- CARD -->
+  <!-- HERO CARD 3 -->
   <div class="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition">
 
     <div class="p-2 rounded-lg bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
@@ -159,7 +159,7 @@
     <span class="font-medium text-gray-800">Clear Documentation</span>
   </div>
 
-  <!-- CARD -->
+  <!-- HERO CARD 4 -->
   <div class="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition">
 
     <div class="p-2 rounded-lg bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
@@ -192,7 +192,7 @@
       <option>Any Price</option>
     </select>
 
-    <button class="bg-green-600 text-white rounded-lg p-3 hover:bg-green-700">
+    <button class="btn-royal text-white rounded-lg p-2 cursor-pointer">
       Search Lands
     </button>
 
@@ -221,11 +221,11 @@
       <div class="p-5">
 
         <div class="flex justify-between items-start">
-          <h3 class="font-semibold text-lg">Obagie</h3>
+          <h3 class="font-semibold text-lg">Golden Park Estate</h3>
           <span class="text-green-600 font-bold">₦45,000,000</span>
         </div>
 
-        <p class="text-sm text-gray-500 mt-1">Obagie, Benin Cityy</p>
+        <p class="text-sm text-gray-500 mt-1">Obagie, Benin City</p>
 
         <div class="flex justify-between text-xs text-gray-600 mt-4">
           <span>600 SQM</span>
@@ -244,7 +244,6 @@
 
       </div>
     </div>
-
     <!-- CARD 2 -->
     <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
 
@@ -259,7 +258,7 @@
 
         <div class="flex justify-between items-start">
           <h3 class="font-semibold text-lg">Epe Prime Land</h3>
-          <span class="text-green-600 font-bold">₦12,500,000</span>
+          <span class="text-green-600 font-bold">₦47,000,000</span>
         </div>
 
         <p class="text-sm text-gray-500 mt-1">Epe, Lagos</p>
@@ -274,7 +273,7 @@
           Best for: Gated estates, Land banking
         </div>
 
-        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded-lg cursor-pointer hover:bg-black">
+        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded-lg cursor-pointer hover:bg-black" onclick="openPropertyModal('Epe-Prime-Land')">
           View Details
         </button>
 
@@ -295,7 +294,7 @@
 
         <div class="flex justify-between items-start">
           <h3 class="font-semibold text-lg">Commercial Hub Land</h3>
-          <span class="text-green-600 font-bold">₦35,000,000</span>
+          <span class="text-green-600 font-bold">₦10,000,000</span>
         </div>
 
         <p class="text-sm text-gray-500 mt-1">Lekki-Epe Expressway</p>
@@ -310,7 +309,7 @@
           Best for: Malls, Offices, Commercial builds
         </div>
 
-        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded-lg cursor-pointer hover:bg-black">
+        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded-lg cursor-pointer hover:bg-black" onclick="openPropertyModal('Commercial-Hub-Land')">
           View Details
         </button>
 
@@ -327,7 +326,7 @@
       <p class="text-gray-600 text-sm">We can help you find the perfect land.</p>
     </div>
 
-    <a href="contact.html" class="btn-royal mt-4 md:mt-0  px-6 py-3 rounded-lg cursor-pointer inline-block font-medium">
+    <a href="contact.html" class="btn-royal mt-4 md:mt-0  px-3 py-3 rounded-lg cursor-pointer inline-block font-medium">
       Request Consultation
     </a>
 
@@ -416,5 +415,102 @@ We help you find, manage, and secure properties with confidence, acting as the t
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="Js/properties.js"></script>
 <script src="Js/script.js"></script>
+
+<div id="property-modal" class="property-modal">
+  <div class="property-modal-box">
+
+    <button onclick="closePropertyModal()" class="property-modal-close">×</button>
+<div class="property-video-area" id="video-container">
+
+  <!-- THUMBNAIL -->
+  <div class="video-thumbnail" onclick="playVideo()">
+    <img id="property-thumbnail" src="images/land1.png" alt="preview">
+
+    <div class="play-button">
+      ▶
+    </div>
+  </div>
+
+</div>
+
+    <div class="property-modal-body">
+
+      <div class="property-main-info">
+        <span class="modal-status">For Sale</span>
+
+        <h2 id="property-title"></h2>
+        <p id="property-location" class="modal-location"></p>
+
+        <p id="property-description" class="modal-description"></p>
+
+        <div class="modal-features">
+          <div>
+            <i data-lucide="maximize"></i>
+            <strong id="property-size"></strong>
+            <span>Plot Size</span>
+          </div>
+
+          <div>
+            <i data-lucide="home"></i>
+            <strong id="property-use"></strong>
+            <span>Land Use</span>
+          </div>
+
+          <div>
+            <i data-lucide="file-text"></i>
+            <strong id="property-title-type"></strong>
+            <span>Title</span>
+          </div>
+
+          <div>
+            <i data-lucide="mountain"></i>
+            <strong id="property-topography"></strong>
+            <span>Topography</span>
+          </div>
+        </div>
+
+        <div class="modal-highlights">
+          <h3>Property Highlights</h3>
+          <ul>
+            <li>Strategically located in a fast-developing area</li>
+            <li>Suitable for residential development</li>
+            <li>Clear documents and verified ownership</li>
+            <li>Good long-term investment potential</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="property-side-card">
+        <h3>Price</h3>
+        <p id="property-price"></p>
+
+        <div class="side-detail">
+          <span>Location</span>
+          <strong id="side-location"></strong>
+        </div>
+
+        <div class="side-detail">
+          <span>Land Size</span>
+          <strong id="side-size"></strong>
+        </div>
+
+        <div class="side-detail">
+          <span>Land Use</span>
+          <strong id="side-use"></strong>
+        </div>
+
+        <div class="side-detail">
+          <span>Title</span>
+          <strong id="side-title-type"></strong>
+        </div>
+
+        <!-- <button class="modal-btn outline">Save Property</button> -->
+        <a href="contact.html" class="modal-btn outline">Contact Us</a>
+        <a href="https://wa.me/+2348071903819" class="modal-btn whatsapp" target="_blank">Chat on WhatsApp</a>
+      </aside>
+
+    </div>
+  </div>
+</div> 
 </body>
 </html>
