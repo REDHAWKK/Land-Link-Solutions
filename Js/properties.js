@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     videoContainer.innerHTML = `
       <div class="video-thumbnail">
-        <img id="property-thumbnail" src="${currentThumbnail}" alt="Property preview">
+        <img id="property-thumbnail" src="${currentThumbnail}" alt="Property preview" loading="lazy">
         <div class="play-button">▶</div>
       </div>
     `;
