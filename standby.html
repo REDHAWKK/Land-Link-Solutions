@@ -1,0 +1,248 @@
+    <!-- Properties Section -->
+    <section id="properties" class="py-20 bg-(--light-color)]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold font-serif" style="color: var(--dark-color);">
+                    Our <span class="text-[var(--primary-color)]">Properties</span>
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
+                    Explore our curated collection of exceptional properties, from luxurious homes to prime investment opportunities.
+                </p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mb-12 bg-white rounded-2xl p-8 shadow-xl">
+                <h3 class="text-2xl font-bold mb-6 text-center" style="color: var(--dark-color);">Find Your Perfect Property</h3>
+                <div class="flex flex-col md:flex-row gap-4 items-center">
+                    <div class="w-full md:w-2/3 relative">
+                        <i data-lucide="search" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+                        <input type="text" id="search-bar" class="w-full pl-12 pr-4 py-4 rounded-xl border border-gray-200 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 search-input transition-all" placeholder="Search by location, property type, or keywords...">
+                    </div>
+                    <button id="search-btn" class="w-full md:w-auto px-8 py-4 bg-[var(--primary-color)] text-white rounded-xl hover:bg-(--primary-dark)] transition-colors font-bold flex items-center justify-center cursor-pointer">
+                        <span>Search Properties</span>
+                        <i data-lucide="search" class="ml-2 w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Property Category Filters -->
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="all">All Properties</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="house">Luxury Houses</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="apartment">Premium Apartments</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="villa">Exclusive Villas</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors font-medium active:bg-[var(--primary-color)] active:text-white" data-filter="commercial">Commercial</button>
+                </div>
+            </div>
+
+            <!-- Available Properties -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 text-center" style="color: var(--dark-color);">Available Properties</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="available-properties">
+                    <!-- Available Property Card 1 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group" data-category="house">
+                        <div class="relative">
+                            <img src="http://static.photos/nature/640x360/112" alt="Luxury Villa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">For Sale</div>
+                            <div class="feature-tag">Luxury Villa</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Prime Location</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Fairfield Estate</h4>
+                                <div class="bg-[var(--primary-color)] text-white px-3 py-1 rounded-full text-sm font-medium">$2,450,000</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>5 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>4 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>4,200 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">An elegant villa featuring modern luxury, panoramic views, and premium amenities in the heart of the city.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Available Property Card 2 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group" data-category="apartment">
+                        <div class="relative">
+                            <img src="http://static.photos/office/640x360/87" alt="Premium Apartment" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">For Sale</div>
+                            <div class="feature-tag">Premium Apartment</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Downtown District</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Skyline Residences</h4>
+                                <div class="bg-[var(--primary-color)] text-white px-3 py-1 rounded-full text-sm font-medium">$895,000</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>2 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>2 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>1,800 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Modern luxury apartment with stunning city views, high-end finishes, and premium building amenities.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Available Property Card 3 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group" data-category="villa">
+                        <div class="relative">
+                            <img src="http://static.photos/landscape/640x360/39" alt="Exclusive Villa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">For Sale</div>
+                            <div class="feature-tag">Exclusive Villa</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Seaside Community</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Ocean Breeze Villa</h4>
+                                <div class="bg-[var(--primary-color)] text-white px-3 py-1 rounded-full text-sm font-medium">$3,750,000</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>6 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>5 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>5,400 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Exclusive waterfront villa with private beach access, infinity pool, and luxury amenities.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sold/Rented Properties -->
+            <div>
+                <h3 class="text-3xl font-bold mb-8 text-center" style="color: var(--dark-color);">Recent Transactions</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Sold Property Card 1 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group relative" data-category="commercial">
+                        <div class="relative">
+                            <img src="http://static.photos/architecture/640x360/154" alt="Commercial Property" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">
+                                <span class="flex items-center">
+                                    <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i>
+                                    Sold
+                                </span>
+                            </div>
+                            <div class="feature-tag">Commercial</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Business District</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Downtown Office Complex</h4>
+                                <div class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-medium">$1.2M</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="building" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>15,000 sqft</span>
+                                <i data-lucide="landmark" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>8 Floors</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Prime commercial property in the business district, fully renovated with modern facilities.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sold Property Card 2 -->
+                    <div class="card-gold rounded-2xl overflow-hidden group relative" data-category="house">
+                        <div class="relative">
+                            <img src="http://static.photos/interior/640x360/72" alt="Modern Home" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag sold">
+                                <span class="flex items-center">
+                                    <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i>
+                                    Sold
+                                </span>
+                            </div>
+                            <div class="feature-tag">Modern Home</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Green Valley</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Serenity Valley Home</h4>
+                                <div class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-medium">$1,350,000</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>4 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>3 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>3,200 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Stunning modern home in a private setting, featuring eco-friendly design and luxury finishes.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Rented Property Card -->
+                    <div class="card-gold rounded-2xl overflow-hidden group relative" data-category="apartment">
+                        <div class="relative">
+                            <img src="http://static.photos/interior/640x360/167" alt="Luxury Apartment" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="property-tag">
+                                <span class="flex items-center">
+                                    <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i>
+                                    Rented
+                                </span>
+                            </div>
+                            <div class="feature-tag">Premium Apartment</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-sm font-medium">Grand Plaza</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">Grand Plaza Suite</h4>
+                                <div class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">$4,500/mo</div>
+                            </div>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i data-lucide="bed" class="w-5 h-5 mr-2 text-[var(--primary-color)]"></i>
+                                <span>3 Bedrooms</span>
+                                <i data-lucide="bath" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>2.5 Bathrooms</span>
+                                <i data-lucide="ruler" class="w-5 h-5 mr-2 ml-4 text-[var(--primary-color)]"></i>
+                                <span>2,100 sqft</span>
+                            </div>
+                            <p class="text-gray-700 mb-6">Luxury rental in the heart of the city, offering premium amenities and exceptional service.</p>
+                            <a href="#contact" class="btn-outline px-6 py-3 rounded-lg w-full font-medium flex items-center justify-center">
+                                <span>View Details</span>
+                                <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
