@@ -109,4 +109,36 @@ document.addEventListener("DOMContentLoaded", () => {
         yearEl.textContent = new Date().getFullYear();
     }
 
+    // Night Mode Toggle
+    const themeToggle = document.getElementById("themeToggle");
+
+function setThemeIcon(isDark) {
+    if (!themeToggle) return;
+
+    themeToggle.innerHTML = `<i data-lucide="${isDark ? "sun" : "moon"}"></i>`;
+
+    if (typeof lucide !== "undefined") {
+        lucide.createIcons();
+    }
+}
+
+if (themeToggle) {
+    const savedTheme = localStorage.getItem("landlink-theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        setThemeIcon(true);
+    } else {
+        setThemeIcon(false);
+    }
+
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        const isDark = document.body.classList.contains("dark-mode");
+
+        setThemeIcon(isDark);
+        localStorage.setItem("landlink-theme", isDark ? "dark" : "light");
+    });
+}
 });
