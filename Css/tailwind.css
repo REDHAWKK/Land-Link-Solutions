@@ -1698,16 +1698,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 22px;
 }
 body.dark-mode {
-  --light-color: #111111;
+  --light-color: #181818;
   --dark-color: #f8f5ee;
   --cream-text: #d6d6d6;
   background: #111111;
 }
 body.dark-mode .bg-white {
   background-color: #101010 !important;
-}
-body.dark-mode [class*="bg-[var(--light-color)] "] {
-  background-color: #181818 !important;
 }
 body.dark-mode .sticky-header {
   background: rgba(17, 17, 17, 0.95);
@@ -1746,6 +1743,22 @@ body.dark-mode .btn-outline:hover {
 }
 body.dark-mode .bg-\[var\(--primary-color\)\] {
   background-color: var(--primary-color) !important;
+}
+body.dark-mode .property-main-info h2, body.dark-mode .modal-features strong, body.dark-mode .side-detail strong {
+  color: #f8f5ee !important;
+}
+body.dark-mode .modal-location, body.dark-mode .modal-description, body.dark-mode .modal-features span, body.dark-mode .side-detail span, body.dark-mode .modal-highlights ul {
+  color: #d6d6d6 !important;
+}
+body.dark-mode .property-side-card h3 {
+  color: #d6d6d6 !important;
+}
+body.dark-mode .modal-features, body.dark-mode .side-detail {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+body.dark-mode .modal-status {
+  background: rgba(31, 122, 53, 0.18);
+  color: #22c55e;
 }
 @property --tw-translate-x {
   syntax: "*";
