@@ -564,14 +564,17 @@ body.dark-mode {
     background: #111111;
 }
 
-
-body.dark-mode .sticky-header {
-    background: rgba(17, 17, 17, 0.95);
+/* Dark version of white sections */
+body.dark-mode .bg-white {
+    background-color: #101010 !important;
 }
 
-body.dark-mode section,
-body.dark-mode .bg-white {
-    background-color: #111111 !important;
+/* Cream/light sections */
+body.dark-mode [class*="bg-[var(--light-color)] "] {
+    background-color: #181818 !important;
+}
+body.dark-mode .sticky-header {
+    background: rgba(17, 17, 17, 0.95);
 }
 
 body.dark-mode .rounded-2xl,
@@ -597,13 +600,14 @@ body.dark-mode select {
     border-color: rgba(255,255,255,0.15);
 }
 body.dark-mode .hero-pattern {
-    background: #111111; /* or any clean dark color */
+    background:
+        linear-gradient(135deg, #101010, #181818) !important;
 }
 body.dark-mode .card-gold {
     background: #1c1c1c !important;
-    border-color: rgba(255,255,255,0.05);
+    border-color: rgba(212, 175, 55, 0.25);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
 }
-
 body.dark-mode .bg-gray-100 {
     background-color: #2a2a2a !important;
     color: #e5e5e5;
@@ -617,4 +621,7 @@ body.dark-mode .btn-outline {
 body.dark-mode .btn-outline:hover {
     background: var(--primary-color);
     color: black;
+}
+body.dark-mode .bg-\[var\(--primary-color\)\] {
+    background-color: var(--primary-color) !important;
 }

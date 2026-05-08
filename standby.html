@@ -246,3 +246,76 @@
             </div>
         </div>
     </section>
+
+    <style>
+body.dark-mode {
+    --light-color: #111111;
+    --dark-color: #f8f5ee;
+    --cream-text: #d6d6d6;
+    background: #111111;
+}
+
+/* Dark version of white sections */
+body.dark-mode .bg-white {
+    background-color: #101010 !important;
+}
+
+/* Cream/light sections */
+body.dark-mode [class*="bg-[var(--light-color)]"] {
+    background-color: #181818 !important;
+}
+body.dark-mode .sticky-header {
+    background: rgba(17, 17, 17, 0.95);
+}
+
+body.dark-mode .rounded-2xl,
+body.dark-mode .rounded-3xl,
+body.dark-mode .property-modal-box,
+body.dark-mode .property-side-card {
+    background-color: #1c1c1c !important;
+    color: #f8f5ee;
+}
+
+body.dark-mode .text-gray-800,
+body.dark-mode .text-gray-700,
+body.dark-mode .text-gray-600,
+body.dark-mode .text-gray-500 {
+    color: #d6d6d6 !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #1c1c1c;
+    color: white;
+    border-color: rgba(255,255,255,0.15);
+}
+body.dark-mode .hero-pattern {
+    background:
+        linear-gradient(135deg, #101010, #181818) !important;
+}
+body.dark-mode .card-gold {
+    background: #1c1c1c !important;
+    border-color: rgba(212, 175, 55, 0.25);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+}
+body.dark-mode .bg-gray-100 {
+    background-color: #2a2a2a !important;
+    color: #e5e5e5;
+}
+
+body.dark-mode .btn-outline {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+body.dark-mode .btn-outline:hover {
+    background: var(--primary-color);
+    color: black;
+}
+body.dark-mode .bg-\[var\(--primary-color\)\] {
+    background-color: var(--primary-color) !important;
+}
+
+
+    </style>
