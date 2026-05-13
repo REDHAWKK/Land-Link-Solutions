@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const properties = {
-    "golden-park": {
-      title: "Golden Park Estate",
+    "apex-fields": {
+      title: "Apex Fields",
       location: "Obagie, Benin City",
       price: "₦45,000,000",
       size: "600 SQM",
@@ -9,30 +9,30 @@ document.addEventListener("DOMContentLoaded", () => {
       titleType: "C of O",
       topography: "Dry Land",
       description:
-        "Golden Park Estate is a dry, well-drained land located in a fast-developing area. Ideal for residential homes and long-term investment.",
+        "Apex Fields is a dry, well-drained land located in a fast-developing area. Ideal for residential homes and long-term investment.",
       video: "Videos/land1.mp4",
       thumbnail: "Images/land1.png"
     },
 
-    "Epe-Prime-Land": {
-      title: "Epe Prime Land",
-      location: "Ibeju-Lekki, Lagos",
+    "heritage-acres": {
+      title: "Heritage Acres",
+      location: "NIFOR, Benin City",
       price: "₦47,000,000",
-      size: "600 SQM",
+      size: "10,000 SQM",
       use: "Residential",
       titleType: "C of O",
       topography: "Dry Land",
       description:
-        "Epe Prime land is a dry, well-drained land located in a fast-developing area. Ideal for residential homes and long-term investment.",
+        "NIFOR is a dry, well-drained land located in a fast-developing area. Ideal for residential homes and long-term investment.",
       video: "Videos/land1.mp4",
       thumbnail: "Images/land2.png"
     },
     "Commercial-Hub-Land": {
       title: "Commercial Hub Land",
-      location: "Ibeju-Lekki, Lagos",
+      location: "Evbuowe, Airport Road Axis, Benin City",
       price: "₦10,000,000",
-      size: "600 SQM",
-      use: "Residential",
+      size: "465 SQM",
+      use: "Commercial",
       titleType: "C of O",
       topography: "Dry Land",
       description:
