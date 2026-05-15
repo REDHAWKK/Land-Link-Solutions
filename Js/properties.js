@@ -125,4 +125,30 @@ document.addEventListener("DOMContentLoaded", () => {
   window.openPropertyModal = openPropertyModal;
   window.closePropertyModal = closePropertyModal;
   window.playVideo = playVideo;
+
+});
+function animateCount(id, target, duration = 2000) {
+  const element = document.getElementById(id);
+
+  let start = 0;
+  const increment = target / (duration / 16);
+
+  function updateCount() {
+    start += increment;
+
+    if (start >= target) {
+      element.textContent = target;
+      return;
+    }
+
+    element.textContent = Math.floor(start);
+
+    requestAnimationFrame(updateCount);
+  }
+
+  updateCount();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  animateCount("land-count", 20);
 });
