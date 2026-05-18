@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "land-4": {
       title: "Land 4",
-      location: "Evbuowe, Airport Road Axis, Benin City",
-      price: "₦10,000,000",
-      size: "465 SQM",
-      use: "Commercial",
+      location: " Upper Ekenwan Road, Okezi Community, Benin City",
+      price: "₦8,500,000",
+      size: "930 SQM",
+      use: "Residential/Commercial",
       titleType: "C of O",
       topography: "Dry Land",
       description:
