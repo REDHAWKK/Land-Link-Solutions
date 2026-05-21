@@ -7,12 +7,13 @@
             --light-color: #faf8f5;
             --cream-text: #5a5a5a;
         }
-        
+        html{
+            overflow-x: hidden;
+        }
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--cream-text);
             background-color: var(--light-color);
-            overflow-x: hidden;
         }
         .nav-link {
     position: relative;

@@ -128,11 +128,13 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  function closePropertyModal() {
-    modal.classList.remove("show");
-    document.body.style.overflow = "";
-    resetVideoThumbnail();
-  }
+function closePropertyModal() {
+  if (!modal) return;
+
+  modal.classList.remove("show");
+  document.body.style.overflow = "";
+  resetVideoThumbnail();
+}
 
   // Makes them work with onclick="" in your HTML
   window.openPropertyModal = openPropertyModal;
@@ -142,6 +144,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 function animateCount(id, target, duration = 1000) {
   const element = document.getElementById(id);
+
+  if (!element) return; // prevents error on pages without land-count
 
   let start = 0;
   const increment = target / (duration / 16);
@@ -155,7 +159,6 @@ function animateCount(id, target, duration = 1000) {
     }
 
     element.textContent = Math.floor(start);
-
     requestAnimationFrame(updateCount);
   }
 
@@ -165,3 +168,81 @@ function animateCount(id, target, duration = 1000) {
 document.addEventListener("DOMContentLoaded", () => {
   animateCount("land-count", 6);
 });
+
+
+function filterLands() {
+
+  const location =
+    document.getElementById("locationFilter")?.value || "all";
+
+  const size =
+    document.getElementById("sizeFilter")?.value || "all";
+
+  const price =
+    document.getElementById("priceFilter")?.value || "all";
+
+const cards = document.querySelectorAll(".land-card");
+
+let visibleCount = 0;
+
+cards.forEach(card => {
+
+    const cardLocation = card.dataset.location;
+    const cardSize = Number(card.dataset.size);
+    const cardPrice = Number(card.dataset.price);
+
+    const matchesLocation =
+      location === "all" || cardLocation === location;
+
+    const matchesSize =
+      size === "all" ||
+      (size === "300-600" &&
+        cardSize >= 300 &&
+        cardSize <= 600) ||
+
+      (size === "600-1000" &&
+        cardSize > 600 &&
+        cardSize <= 1000) ||
+
+      (size === "1000-plus" &&
+        cardSize > 1000);
+
+    const matchesPrice =
+      price === "all" ||
+
+      (price === "below-10m" &&
+        cardPrice < 10000000) ||
+
+      (price === "10m-50m" &&
+        cardPrice >= 10000000 &&
+        cardPrice <= 50000000) ||
+
+      (price === "50m-plus" &&
+        cardPrice > 50000000);
+
+const shouldShow =
+  matchesLocation &&
+  matchesSize &&
+  matchesPrice;
+
+card.style.display = shouldShow ? "block" : "none";
+
+if (shouldShow) {
+  visibleCount++;
+}
+const noResults =
+  document.getElementById("noResultsMessage");
+
+if (noResults) {
+  noResults.classList.toggle(
+    "hidden",
+    visibleCount !== 0
+  );
+}
+
+  });
+}
+
+document
+  .getElementById("filterBtn")
+  ?.addEventListener("click", filterLands);

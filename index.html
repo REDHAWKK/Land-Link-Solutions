@@ -231,31 +231,41 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
                     Our <span class="text-[var(--primary-color)]">Properties</span>
                 </h2>
                 <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
-                    Explore our curated collection of exceptional properties, from luxurious homes to prime investment opportunities.
+                    Explore our curated collection of exceptional properties, from prime lands to homes and investment opportunities.
                 </p>
             </div>
 
   <!-- FILTER -->
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-10" data-aos="fade-up">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10" data-aos="fade-up">
 
-    <select class="border rounded-lg p-3 cursor-pointer">
-      <option>All Locations</option>
+    <select id="locationFilter" class="border rounded-lg p-3 cursor-pointer">
+<option value="all">All Locations</option>
+<option value="benin-city">Benin City</option>
+<option value="lagos">Lagos</option>
+<option value="abuja">Abuja</option>
+<option value="ikeja">Ikeja</option>
+<option value="epe">Epe</option>
+<option value="asaba">Asaba</option>
+<option value="port-harcourt">Port Harcourt</option>
     </select>
 
-    <select class="border rounded-lg p-3 cursor-pointer">
-      <option>All Land Use</option>
+
+    <select id="sizeFilter" class="border rounded-lg p-3 cursor-pointer">
+  <option value="all">Any Size</option>
+  <option value="300-600">300 – 600 SQM</option>
+  <option value="600-1000">600 – 1000 SQM</option>
+  <option value="1000-plus">1000+ SQM</option>
     </select>
 
-    <select class="border rounded-lg p-3 cursor-pointer">
-      <option>Any Size</option>
+    <select id="priceFilter" class="border rounded-lg p-3 cursor-pointer">
+  <option value="all">Any Price</option>
+  <option value="below-10m">Below ₦10M</option>
+  <option value="10m-50m">₦10M – ₦50M</option>
+  <option value="50m-plus">₦50M+</option>
     </select>
 
-    <select class="border rounded-lg p-3 cursor-pointer">
-      <option>Any Price</option>
-    </select>
-
-    <button class="btn-royal text-white rounded-lg p-2 cursor-pointer">
-      Search Lands
+    <button id="filterBtn" class="btn-royal text-white rounded-lg p-3 cursor-pointer">
+      Find Properties
     </button>
 
   </div>
@@ -270,7 +280,11 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" >
 
     <!-- Land Card 1 -->
-    <div class="rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="300">
+    <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="300"
+    data-location="benin-city"
+     data-size="600"
+     data-price="45000000"
+    >
 
       <div class="relative">
         <img src="Images/land1.png" class="h-48 w-full object-cover">
@@ -283,7 +297,7 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
       <div class="p-5">
 
         <div class="flex justify-between items-start">
-          <h3 class="font-semibold text-lg">Apex Fields</h3>
+          <h3 class="font-semibold text-lg">Land 1</h3>
           <span class="text-green-600 font-bold">₦45,000,000</span>
         </div>
 
@@ -299,7 +313,7 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
           Best for: Residential, Estate development
         </div>
 
-        <button onclick="openPropertyModal('apex-fields')"
+        <button onclick="openPropertyModal('land-1')"
         class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer">
           View Details
         </button>
@@ -307,7 +321,11 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
       </div>
     </div>
     <!-- Land Card 2 -->
-    <div class="rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="500">
+    <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="500"
+    data-location="benin-city"
+     data-size="10000"
+     data-price="47000000"
+     >
 
       <div class="relative">
         <img src="Images/land2.png" class="h-48 w-full object-cover">
@@ -319,7 +337,7 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
       <div class="p-5">
 
         <div class="flex justify-between items-start">
-          <h3 class="font-semibold text-lg">Heritage Acres</h3>
+          <h3 class="font-semibold text-lg">Land 2</h3>
           <span class="text-green-600 font-bold">₦47,000,000</span>
         </div>
 
@@ -335,15 +353,18 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
           Best for: Gated estates, Land banking
         </div>
 
-        <button class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer" onclick="openPropertyModal('heritage-acres')">
+        <button class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer" onclick="openPropertyModal('land-2')">
           View Details
         </button>
 
       </div>
     </div>
-
     <!-- Land Card 3 -->
-    <div class="rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="700"> 
+    <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="700"
+    data-location="benin-city"
+     data-size="1000"
+     data-price="10000000"
+     > 
 
       <div class="relative">
         <img src="Images/land3.png" class="h-48 w-full object-cover">
@@ -355,7 +376,7 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
       <div class="p-5">
 
         <div class="flex justify-between items-start">
-          <h3 class="font-semibold text-lg">Commercial Hub Land</h3>
+          <h3 class="font-semibold text-lg">Land 3</h3>
           <span class="text-green-600 font-bold">₦10,000,000</span>
         </div>
 
@@ -371,14 +392,25 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
           Best for: Malls, Offices, Commercial builds
         </div>
 
-        <button class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer" onclick="openPropertyModal('Commercial-Hub-Land')">
+        <button class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer" onclick="openPropertyModal('land-3')">
           View Details
         </button>
 
       </div>
     </div>
+<div id="noResultsMessage"
+     class="hidden text-center py-16">
+     
+  <h3 class="text-2xl font-semibold text-gray-700">
+    No Properties Found
+  </h3>
 
-  </div>        </div>
+  <p class="text-gray-500 mt-2">
+    Try adjusting your filters or explore other locations.
+  </p>
+
+</div>
+        </div>
     </section>
 
     <!-- Features Section -->
