@@ -104,15 +104,20 @@
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
         }
         
-        .hero-pattern {
-            background-image: repeating-linear-gradient(
-                45deg,
-                var(--light-color),
-                var(--light-color) 10px,
-                #f3ebe3 10px,
-                #f3ebe3 20px
-            );
-        }
+.hero-pattern{
+    background-color: #faf8f5;
+
+    background-image:
+    linear-gradient(rgba(212,175,55,0.04) 1px, transparent 1px),
+
+    linear-gradient(
+        90deg,
+        rgba(212,175,55,0.04) 1px,
+        transparent 1px
+    );
+
+    background-size: 40px 40px;
+}
         
         .footer-royal {
             background: linear-gradient(180deg, #1a1a1a 0%, #2c2c2c 100%);

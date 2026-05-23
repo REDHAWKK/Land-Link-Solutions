@@ -1326,9 +1326,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
 }
-.hero-pattern {
-  background-image: repeating-linear-gradient( 45deg, var(--light-color), var(--light-color) 10px, #f3ebe3 10px, #f3ebe3 20px );
-}
+
 .footer-royal {
   background: linear-gradient(180deg, #1a1a1a 0%, #2c2c2c 100%);
 }
@@ -1793,6 +1791,7 @@ body.dark-mode input, body.dark-mode textarea, body.dark-mode select {
   color: white;
   border-color: rgba(255,255,255,0.15);
 }
+
 body.dark-mode .hero-pattern {
   background: linear-gradient(135deg, #101010, #181818) !important;
 }
