@@ -194,7 +194,87 @@
             transform: scale(1.1) rotate(5deg);
             box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
         }
-        
+        .feature-card{
+    background: #f8f6f1;
+    border: 1px solid rgba(212,175,55,0.18);
+    border-radius: 28px;
+
+    padding:
+    2.5rem
+    2rem
+    2rem;
+
+    min-height: 530px;
+
+    position: relative;
+
+    transition: .35s ease;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover{
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 18px 45px rgba(212,175,55,0.12);
+}
+
+.feature-bg{
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+}
+
+.feature-bg img{
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+    height:auto;
+
+    object-fit:cover;
+
+    opacity:.55;
+}
+
+.feature-title{
+    font-size:2.2rem;
+    color:#182033;
+
+    margin-top:1.8rem;
+    margin-bottom:1rem;
+}
+
+.feature-divider{
+    width:42px;
+    height:3px;
+
+    background:var(--primary-color);
+
+    margin:
+    0 auto
+    1.6rem;
+
+    border-radius:999px;
+}
+
+.feature-text{
+    font-size:1rem;
+
+    line-height:1.9;
+
+    color:#445065;
+
+    max-width:260px;
+
+    margin:auto;
+}
         @media (max-width: 768px) {
             .hero-text {
                 font-size: 2.5rem !important;
@@ -648,4 +728,41 @@ body.dark-mode .side-detail {
 body.dark-mode .modal-status {
     background: rgba(31, 122, 53, 0.18);
     color: #22c55e;
+}
+body.dark-mode .feature-card{
+    background:
+    linear-gradient(
+        180deg,
+        #1b1b1b 0%,
+        #151515 100%
+    );
+
+    border:1px solid rgba(212,175,55,0.15);
+
+    box-shadow:
+    0 12px 40px rgba(0,0,0,0.35);
+}
+
+body.dark-mode .feature-title{
+    color:#f5f5f5;
+}
+
+body.dark-mode .feature-text{
+    color:#c8c8c8;
+}
+
+body.dark-mode .feature-bg img{
+    opacity:.22;
+    filter:
+    brightness(.85)
+    contrast(1.05);
+}
+
+body.dark-mode .feature-divider{
+    background:var(--primary-color);
+}
+
+body.dark-mode .feature-card:hover{
+    box-shadow:
+    0 20px 50px rgba(212,175,55,0.12);
 }
