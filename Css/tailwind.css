@@ -1326,7 +1326,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
 }
-
+.hero-pattern {
+  background-color: #faf8f5;
+  background-image: linear-gradient(rgba(212,175,55,0.04) 1px, transparent 1px), linear-gradient( 90deg, rgba(212,175,55,0.04) 1px, transparent 1px );
+  background-size: 40px 40px;
+}
 .footer-royal {
   background: linear-gradient(180deg, #1a1a1a 0%, #2c2c2c 100%);
 }
@@ -1426,7 +1430,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .55;
 }
 .feature-title {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   color: #182033;
   margin-top: 1.8rem;
   margin-bottom: 1rem;
@@ -1791,7 +1795,6 @@ body.dark-mode input, body.dark-mode textarea, body.dark-mode select {
   color: white;
   border-color: rgba(255,255,255,0.15);
 }
-
 body.dark-mode .hero-pattern {
   background: linear-gradient(135deg, #101010, #181818) !important;
 }
