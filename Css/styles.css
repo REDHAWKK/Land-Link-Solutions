@@ -104,21 +104,184 @@
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
         }
         
+     
 .hero-pattern{
-    background-color: #faf8f5;
+    position: relative;
+    overflow: hidden;
+    background: #faf8f5;
+    isolation: isolate;
+}
 
-    background-image:
-    linear-gradient(rgba(212,175,55,0.04) 1px, transparent 1px),
+/* Background Image */
+.hero-pattern::before{
+    content: "";
 
+    position: absolute;
+    inset: 0;
+
+    background:
     linear-gradient(
         90deg,
-        rgba(212,175,55,0.04) 1px,
+        rgba(250,248,245,1) 0%,
+        rgba(250,248,245,0.97) 22%,
+        rgba(250,248,245,0.90) 38%,
+        rgba(250,248,245,0.45) 55%,
+        rgba(250,248,245,0.08) 72%
+    ),
+    url("../Images/hero.png");
+
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+
+    z-index: -2;
+}
+
+/* Elegant overlay texture */
+.hero-pattern::after{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+    linear-gradient(
+        rgba(212,175,55,0.03) 1px,
+        transparent 1px
+    ),
+    linear-gradient(
+        90deg,
+        rgba(212,175,55,0.03) 1px,
+        transparent 0.5px
+    );
+
+    background-size: 42px 42px;
+
+    z-index: -1;
+}
+
+/* Optional curved accent */
+.hero-accent{
+    position: absolute;
+    left: -120px;
+    bottom: -120px;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    border:
+    1px solid
+    rgba(212,175,55,0.08);
+}
+
+.hero-accent::before,
+.hero-accent::after{
+    content: "";
+
+    position: absolute;
+    inset: 40px;
+
+    border-radius: inherit;
+
+    border:
+    1px solid
+    rgba(212,175,55,0.08);
+}
+
+.hero-accent::after{
+    inset: 80px;
+}
+
+/* Content stays above */
+.hero-content{
+    position: relative;
+    z-index: 2;
+}
+
+/* Better responsive behavior */
+@media (max-width: 992px){
+
+    .hero-pattern::before{
+        background:
+        linear-gradient(
+            180deg,
+            rgba(250,248,245,0.96) 0%,
+            rgba(250,248,245,0.92) 25%,
+            rgba(250,248,245,0.82) 50%,
+            rgba(250,248,245,0.65) 100%
+        ),
+        url("../Images/hero.png");
+
+        background-position: center;
+    }
+
+    .hero-accent{
+        width: 340px;
+        height: 340px;
+        left: -100px;
+        bottom: -100px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .hero-pattern{
+        padding-top: 1.5rem;
+    }
+
+    .hero-pattern::before{
+        background:
+        linear-gradient(
+            180deg,
+            rgba(250,248,245,0.97) 0%,
+            rgba(250,248,245,0.90) 35%,
+            rgba(250,248,245,0.75) 100%
+        ),
+        url("../Images/hero.png");
+
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-accent{
+        display: none;
+    }
+    
+}
+/* Dark Mode */
+body.dark-mode .hero-pattern{
+    background: #111111;
+}
+
+body.dark-mode .hero-pattern::before{
+    background:
+    linear-gradient(
+        90deg,
+        rgba(17,17,17,1) 0%,
+        rgba(17,17,17,0.96) 28%,
+        rgba(17,17,17,0.82) 48%,
+        rgba(17,17,17,0.35) 70%
+    ),
+    url("../Images/hero-dark.png");
+}
+
+body.dark-mode .hero-pattern::after{
+    background:
+    linear-gradient(
+        rgba(212,175,55,0.025) 1px,
+        transparent 1px
+    ),
+    linear-gradient(
+        90deg,
+        rgba(212,175,55,0.025) 1px,
         transparent 1px
     );
 
-    background-size: 40px 40px;
+    background-size: 42px 42px;
 }
-        
+
         .footer-royal {
             background: linear-gradient(180deg, #1a1a1a 0%, #2c2c2c 100%);
         }
@@ -280,11 +443,6 @@
 
     margin:auto;
 }
-        @media (max-width: 768px) {
-            .hero-text {
-                font-size: 2.5rem !important;
-            }
-        }
         
         .loader {
             position: fixed;
@@ -680,10 +838,6 @@ body.dark-mode select {
     background: #1c1c1c;
     color: white;
     border-color: rgba(255,255,255,0.15);
-}
-body.dark-mode .hero-pattern {
-    background:
-        linear-gradient(135deg, #101010, #181818) !important;
 }
 body.dark-mode .card-gold {
     background: #1c1c1c !important;
