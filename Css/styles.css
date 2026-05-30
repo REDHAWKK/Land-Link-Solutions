@@ -232,14 +232,14 @@
     }
 
     .hero-pattern::before{
-        background:
-        linear-gradient(
-            180deg,
-            rgba(250,248,245,0.97) 0%,
-            rgba(250,248,245,0.90) 35%,
-            rgba(250,248,245,0.75) 100%
-        ),
-        url("../Images/hero.png");
+background:
+linear-gradient(
+    180deg,
+    rgba(250,248,245,0.90) 0%,
+    rgba(250,248,245,0.65) 35%,
+    rgba(250,248,245,0.35) 100%
+),
+url("../Images/hero.png");
 
         background-position: center;
         background-size: cover;
@@ -281,7 +281,23 @@ body.dark-mode .hero-pattern::after{
 
     background-size: 42px 42px;
 }
+@media (max-width:768px){
 
+    body.dark-mode .hero-pattern::before{
+        background:
+        linear-gradient(
+            180deg,
+            rgba(17,17,17,0.80) 0%,
+            rgba(17,17,17,0.55) 35%,
+            rgba(17,17,17,0.25) 100%
+        ),
+        url("../Images/hero-dark.png");
+
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
         .footer-royal {
             background: linear-gradient(180deg, #1a1a1a 0%, #2c2c2c 100%);
         }
