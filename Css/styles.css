@@ -105,15 +105,14 @@
         }
         
      
-.hero-pattern{
+.hero-bg{
     position: relative;
     overflow: hidden;
     background: #faf8f5;
     isolation: isolate;
 }
 
-/* Background Image */
-.hero-pattern::before{
+.hero-bg::before{
     content: "";
 
     position: absolute;
@@ -136,74 +135,22 @@
 
     z-index: -2;
 }
-
-/* Elegant overlay texture */
-.hero-pattern::after{
+.hero-bg::after{
     content: "";
-
     position: absolute;
     inset: 0;
-
-    background:
-    linear-gradient(
-        rgba(212,175,55,0.03) 1px,
-        transparent 1px
-    ),
-    linear-gradient(
-        90deg,
-        rgba(212,175,55,0.03) 1px,
-        transparent 0.5px
-    );
-
-    background-size: 42px 42px;
-
     z-index: -1;
 }
-
-/* Optional curved accent */
-.hero-accent{
-    position: absolute;
-    left: -120px;
-    bottom: -120px;
-
-    width: 500px;
-    height: 500px;
-
-    border-radius: 50%;
-
-    border:
-    1px solid
-    rgba(212,175,55,0.08);
-}
-
-.hero-accent::before,
-.hero-accent::after{
-    content: "";
-
-    position: absolute;
-    inset: 40px;
-
-    border-radius: inherit;
-
-    border:
-    1px solid
-    rgba(212,175,55,0.08);
-}
-
-.hero-accent::after{
-    inset: 80px;
-}
-
 /* Content stays above */
-.hero-content{
+/* .hero-content{
     position: relative;
     z-index: 2;
-}
+} */
 
 /* Better responsive behavior */
 @media (max-width: 992px){
 
-    .hero-pattern::before{
+    .hero-bg::before{
         background:
         linear-gradient(
             180deg,
@@ -216,22 +163,21 @@
 
         background-position: center;
     }
-
-    .hero-accent{
-        width: 340px;
-        height: 340px;
-        left: -100px;
-        bottom: -100px;
-    }
 }
 
 @media (max-width: 768px){
 
-    .hero-pattern{
-        padding-top: 1.5rem;
+  .hero-bg{
+        min-height: 100vh;
+        align-items: flex-start;
     }
 
-    .hero-pattern::before{
+    .hero-content{
+        padding-top: 5rem;
+    }
+
+}
+    .hero-bg::before{
 background:
 linear-gradient(
     180deg,
@@ -245,17 +191,12 @@ url("../Images/hero.png");
         background-size: cover;
     }
 
-    .hero-accent{
-        display: none;
-    }
-    
-}
 /* Dark Mode */
-body.dark-mode .hero-pattern{
+body.dark-mode .hero-bg{
     background: #111111;
 }
 
-body.dark-mode .hero-pattern::before{
+body.dark-mode .hero-bg::before{
     background:
     linear-gradient(
         90deg,
@@ -267,23 +208,9 @@ body.dark-mode .hero-pattern::before{
     url("../Images/hero-dark.png");
 }
 
-body.dark-mode .hero-pattern::after{
-    background:
-    linear-gradient(
-        rgba(212,175,55,0.025) 1px,
-        transparent 1px
-    ),
-    linear-gradient(
-        90deg,
-        rgba(212,175,55,0.025) 1px,
-        transparent 1px
-    );
-
-    background-size: 42px 42px;
-}
 @media (max-width:768px){
 
-    body.dark-mode .hero-pattern::before{
+    body.dark-mode .hero-bg::before{
         background:
         linear-gradient(
             180deg,

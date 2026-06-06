@@ -714,9 +714,6 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
-  .py-0 {
-    padding-block: calc(var(--spacing) * 0);
-  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -1189,11 +1186,6 @@
       padding: calc(var(--spacing) * 12);
     }
   }
-  .lg\:py-0 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 0);
-    }
-  }
   .lg\:py-16 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 16);
@@ -1305,13 +1297,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
 }
-.hero-pattern {
+.hero-bg {
   position: relative;
   overflow: hidden;
   background: #faf8f5;
   isolation: isolate;
 }
-.hero-pattern::before {
+.hero-bg::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1321,74 +1313,40 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   z-index: -2;
 }
-.hero-pattern::after {
+.hero-bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient( rgba(212,175,55,0.03) 1px, transparent 1px ), linear-gradient( 90deg, rgba(212,175,55,0.03) 1px, transparent 0.5px );
-  background-size: 42px 42px;
   z-index: -1;
 }
-.hero-accent {
-  position: absolute;
-  left: -120px;
-  bottom: -120px;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  border: 1px solid rgba(212,175,55,0.08);
-}
-.hero-accent::before, .hero-accent::after {
-  content: "";
-  position: absolute;
-  inset: 40px;
-  border-radius: inherit;
-  border: 1px solid rgba(212,175,55,0.08);
-}
-.hero-accent::after {
-  inset: 80px;
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
 @media (max-width: 992px) {
-  .hero-pattern::before {
+  .hero-bg::before {
     background: linear-gradient( 180deg, rgba(250,248,245,0.96) 0%, rgba(250,248,245,0.92) 25%, rgba(250,248,245,0.82) 50%, rgba(250,248,245,0.65) 100% ), url("../Images/hero.png");
     background-position: center;
   }
-  .hero-accent {
-    width: 340px;
-    height: 340px;
-    left: -100px;
-    bottom: -100px;
-  }
 }
 @media (max-width: 768px) {
-  .hero-pattern {
-    padding-top: 1.5rem;
+  .hero-bg {
+    min-height: 100vh;
+    align-items: flex-start;
   }
-  .hero-pattern::before {
-    background: linear-gradient( 180deg, rgba(250,248,245,0.90) 0%, rgba(250,248,245,0.65) 35%, rgba(250,248,245,0.35) 100% ), url("../Images/hero.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .hero-accent {
-    display: none;
+  .hero-content {
+    padding-top: 5rem;
   }
 }
-body.dark-mode .hero-pattern {
+.hero-bg::before {
+  background: linear-gradient( 180deg, rgba(250,248,245,0.90) 0%, rgba(250,248,245,0.65) 35%, rgba(250,248,245,0.35) 100% ), url("../Images/hero.png");
+  background-position: center;
+  background-size: cover;
+}
+body.dark-mode .hero-bg {
   background: #111111;
 }
-body.dark-mode .hero-pattern::before {
+body.dark-mode .hero-bg::before {
   background: linear-gradient( 90deg, rgba(17,17,17,1) 0%, rgba(17,17,17,0.96) 28%, rgba(17,17,17,0.82) 48%, rgba(17,17,17,0.35) 70% ), url("../Images/hero-dark.png");
 }
-body.dark-mode .hero-pattern::after {
-  background: linear-gradient( rgba(212,175,55,0.025) 1px, transparent 1px ), linear-gradient( 90deg, rgba(212,175,55,0.025) 1px, transparent 1px );
-  background-size: 42px 42px;
-}
 @media (max-width:768px) {
-  body.dark-mode .hero-pattern::before {
+  body.dark-mode .hero-bg::before {
     background: linear-gradient( 180deg, rgba(17,17,17,0.80) 0%, rgba(17,17,17,0.55) 35%, rgba(17,17,17,0.25) 100% ), url("../Images/hero-dark.png");
     background-size: cover;
     background-position: center center;
