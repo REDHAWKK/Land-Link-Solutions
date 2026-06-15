@@ -2017,11 +2017,11 @@ body.dark-mode .feature-card:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #3d414a;
 }
-body.dark-mode::-webkit-scrollbar-track {
-  background: #1c1c1c !important;
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #1c1c1c;
 }
-body.dark-mode::-webkit-scrollbar-thumb {
-  background: #d4af37 !important;
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: #d4af37;
 }
 @property --tw-translate-x {
   syntax: "*";
