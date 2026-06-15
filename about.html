@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <!--Meta tags and SEO optimization-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Land Link Solutions. We are a team of experienced lawyers and engineers working across Edo State, Abuja, Lagos, Akwa Ibom, and Delta State. Our strength comes from combining legal expertise with technical insight to solve complex land challenges from every angle.">
-    <meta name="keywords" content="real estate, land for sale, property investment, buy land, sell property, Land Link Solutions">
+    <meta name="description"
+        content="Learn about Land Link Solutions. We are a team of experienced lawyers and engineers working across Edo State, Abuja, Lagos, Akwa Ibom, and Delta State. Our strength comes from combining legal expertise with technical insight to solve complex land challenges from every angle.">
+    <meta name="keywords"
+        content="real estate, land for sale, property investment, buy land, sell property, Land Link Solutions">
     <meta name="author" content="Land Link Solutions">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="About Us | Land Link Solutions | Real Estate You Can Trust">
-    <meta property="og:description" content="Learn about Land Link Solutions. Connecting you to the best land and property opportunities. Buy, sell, and invest with confidence.">
+    <meta property="og:description"
+        content="Learn about Land Link Solutions. Connecting you to the best land and property opportunities. Buy, sell, and invest with confidence.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://landlinksolutions.org">
     <meta property="og:image" content="https://landlinksolutions.org/Images/dark-logo.png">
@@ -21,12 +25,15 @@
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="Css/styles.css">
     <link rel="stylesheet" href="Css/tailwind.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
+
 <body class="antialiased">
     <!-- Loader -->
     <div class="loader">
@@ -36,244 +43,317 @@
             <p style="color: #666;">Connecting you with your dream property</p>
         </div>
     </div>
-    
-<!-- Navigation -->
-<nav id="navbar" class="sticky-header pt-4 pb-4 px-6 transition-all duration-300">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
 
-        <!-- Logo -->
-        <div class="flex items-center">
-            <img src="Images/nav-logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
-            <div class="ml-3">
-                <h1 class="text-xl font-bold font-serif" style="color: var(--primary-color);">
-                    Land Link
-                </h1>
-                <p class="text-sm text-gray-600">Solutions</p>
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky-header pt-4 pb-4 px-6 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="Images/nav-logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+                <div class="ml-3">
+                    <h1 class="text-xl font-bold font-serif" style="color: var(--primary-color);">
+                        Land Link
+                    </h1>
+                    <p class="text-sm text-gray-600">Solutions</p>
+                </div>
             </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex space-x-8">
+                <a href="index.html"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="home" class="w-4 h-4"></i> Home
+                </a>
+
+                <a href="about.html"
+                    class="nav-link active flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="info" class="w-4 h-4"></i> About
+                </a>
+
+                <a href="properties.html"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="building-2" class="w-4 h-4"></i> Properties
+                </a>
+
+                <!-- <a href="invest.html"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="trending-up" class="w-4 h-4"></i> Invest
+                </a> -->
+
+                <a href="contact.html"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="phone" class="w-4 h-4"></i> Contact
+                </a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <a href="https://wa.me/+2348136171294" target="_blank"
+                class="hidden lg:inline-flex btn-royal items-center gap-2 px-5 py-2.5 rounded-full text-sm shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 transform hover:-translate-y-0.5">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                Chat on WhatsApp
+            </a>
+
+            <!-- Mobile Hamburger -->
+            <button id="hamburger" class="lg:hidden flex flex-col gap-1.5 p-2 cursor-pointer" aria-label="Open menu">
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+            </button>
+
         </div>
-        
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8">
-            <a href="index.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="home" class="w-4 h-4"></i> Home
-            </a>
-            <a href="about.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium nav-link active">
-                <i data-lucide="info" class="w-4 h-4"></i> About
-            </a>
-            <a href="properties.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="building-2" class="w-4 h-4"></i> Properties
-            </a>
-            <!-- <a href="testimonials.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="message-square" class="w-4 h-4"></i> Testimonials
-            </a> -->
-            <a href="invest.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="trending-up" class="w-4 h-4"></i> Invest
-            </a>
-            <a href="contact.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="phone" class="w-4 h-4"></i> Contact
-            </a>
-        </div>
-        
-        <!-- Mobile Button -->
-        <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-gray-800 focus:outline-none cursor-pointer">
-                <i data-lucide="menu" class="w-8 h-8"></i>
+    </nav>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div id="menu-overlay"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300">
+    </div>
+
+    <!-- ===== MOBILE SIDE MENU ===== -->
+    <div id="side-menu"
+        class="fixed top-0 right-0 h-full w-[320px] max-w-[85vw] bg-white z-[1001] transform  transition-transform duration-300 ease-in-out shadow-2xl shadow-black/50 flex flex-col">
+
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between px-6 py-5 border-b border-gray-700/50">
+            <span class="font-serif text-xl font-bold text-dark-300">
+                Menu
+            </span>
+
+            <button id="menu-close" class="p-2 hover:bg-gray-700/50 rounded-lg transition-colors cursor-pointer"
+                aria-label="Close menu">
+                <i data-lucide="x" class="w-5 h-5 text-dark-300"></i>
             </button>
         </div>
-    </div>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4 px-6 pb-4">
-        <div class="flex flex-col space-y-3">
-            <a href="index.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="home" class="w-5 h-5"></i> Home
+
+        <!-- Menu Links -->
+        <nav class="flex flex-col py-6 px-4 flex-1 gap-1">
+
+            <a href="index.html"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                Home
             </a>
-            <a href="about.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="info" class="w-5 h-5"></i> About
+
+            <a href="about.html"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="info" class="w-5 h-5"></i>
+                About
             </a>
-            <a href="properties.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="building-2" class="w-5 h-5"></i> Properties
+
+            <a href="properties.html"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="building" class="w-5 h-5"></i>
+                Properties
             </a>
-            <!-- <a href="testimonials.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="message-square" class="w-5 h-5"></i> Testimonials
+
+            <!-- <a href="invest.html"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="trending-up" class="w-5 h-5"></i>
+                Invest
             </a> -->
-            <a href="invest.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="trending-up" class="w-5 h-5"></i> Invest
+
+            <a href="contact.html"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+                Contact
             </a>
-            <a href="contact.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="phone" class="w-5 h-5"></i> Contact
+
+        </nav>
+
+        <!-- Menu Footer -->
+        <div class="px-6 py-5 border-t border-gray-700/50">
+            <a href="https://wa.me/+2348136171294" target="_blank"
+                class="btn-royal  flex items-center justify-center gap-2 w-full bg-gold-500 hover:bg-gold-400 text-dark-900 font-semibold px-5 py-3 rounded-xl transition-all duration-300 shadow-lg shadow-gold-500/20">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                Chat on WhatsApp
             </a>
         </div>
+
     </div>
-</nav>
+    <!-- End of Navigation -->
 
 
-<!--Hero Section-->
-<section class="pt-20 pb-20 hero-pattern text-center">
-    <div class="max-w-4xl mx-auto px-6">
-        <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: var(--dark-color);">
-            About <span class="text-[var(--primary-color)]">Land Link Solutions</span>
-        </h1>
-        <p class="text-lg text-gray-700">
-            Built to simplify land transactions and eliminate the risks that cost people time, money, and peace of mind.
-        </p>
-    </div>
-</section>
-
-<!-- Story Section -->
- <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-        <div data-aos="fade-right">
-            <h2 class="text-4xl font-bold mb-6">Our Story</h2>
-            <p class="text-gray-700 mb-4">
-                Land Link Solutions was created from real experience. While working with clients across different states, we kept encountering the same problems: unclear ownership, fraudulent transactions, disputes, and costly delays.
-            </p>
-            <p class="text-gray-700 mb-4">
-                These weren’t rare cases, they were happening every day. People were losing money simply because they didn’t have the right guidance or verification.
-            </p>
-            <p class="text-gray-700">
-                Instead of letting these issues continue, we came together as a team of legal and technical professionals to build a solution people can truly rely on.
+    <!--Hero Section-->
+    <section class="pt-20 pb-20 hero-bg text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: var(--dark-color);">
+                About <span class="text-[var(--primary-color)]">Land Link Solutions</span>
+            </h1>
+            <p class="text-lg text-gray-700">
+                Built to simplify land transactions and eliminate the risks that cost people time, money, and peace of
+                mind.
             </p>
         </div>
+    </section>
 
-        <div data-aos="fade-left">
-            <img src="Images/img1.png" class="rounded-2xl shadow-xl" alt="Our Story">
-        </div>
+    <!-- Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-    </div>
-</section>
-
-<!--What we do section-->
-<section class="py-20 bg-[var(--light-color)]">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-
-        <h2 class="text-4xl font-bold mb-4">What We Do</h2>
-        <p class="text-gray-700 max-w-3xl mx-auto mb-12">
-            At Land Link Solutions, we combine legal expertise and technical precision to protect your interests in every land and property transaction.
-        </p>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="font-bold mb-3">Advisory & Consultancy</h3>
-                <p class="text-gray-600">
-                    Professional guidance on land acquisition, documentation, and compliance so you make informed decisions.
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-bold mb-6">Our Story</h2>
+                <p class="text-gray-700 mb-4">
+                    Land Link Solutions was created from real experience. While working with clients across different
+                    states, we kept encountering the same problems: unclear ownership, fraudulent transactions,
+                    disputes, and costly delays.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    These weren’t rare cases, they were happening every day. People were losing money simply because
+                    they didn’t have the right guidance or verification.
+                </p>
+                <p class="text-gray-700">
+                    Instead of letting these issues continue, we came together as a team of legal and technical
+                    professionals to build a solution people can truly rely on.
                 </p>
             </div>
 
-            <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="font-bold mb-3">Title Investigation & Due Diligence</h3>
-                <p class="text-gray-600">
-                    We verify ownership, documents, and encumbrances before any commitment is made.
-                </p>
-            </div>
-
-            <div class="card-gold p-6 rounded-xl"   data-aos="fade-up" data-aos-delay="300">
-                <h3 class="font-bold mb-3">Transaction Negotiation</h3>
-                <p class="text-gray-600">
-                    We represent you to secure fair, transparent, and risk-free property deals.
-                </p>
-            </div>
-
-            <div class="card-gold p-6 rounded-xl"  data-aos="fade-up" data-aos-delay="400">
-                <h3 class="font-bold mb-3">Tenant Background Checks</h3>
-                <p class="text-gray-600">
-                    We help landlords vet tenants to reduce risk and protect their property.
-                </p>
-            </div>
-
-            <div class="card-gold p-6 rounded-xl md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="500">
-                <h3 class="font-bold mb-3">Property Sales & Rentals</h3>
-                <p class="text-gray-600">
-                    Buy, sell, or rent with confidence. Every listing is fully verified and free from encumbrances.
-                </p>
-                <p class="text-[var(--primary-color)] font-medium mt-3">
-                    If it’s with us, it’s genuine.
-                </p>
+            <div data-aos="fade-left">
+                <img src="Images/img1.png" class="rounded-2xl shadow-xl" alt="Our Story">
             </div>
 
         </div>
-    </div>
-</section>
-<!--Who we are section-->
-<section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6 text-center">
+    </section>
 
-        <h2 class="text-4xl font-bold mb-6">Who We Are</h2>
+    <!--What we do section-->
+    <section class="py-20 bg-[var(--light-color)]">
+        <div class="max-w-7xl mx-auto px-6 text-center">
 
-        <p class="max-w-3xl mx-auto text-gray-700 text-lg">
-            We are a team of experienced lawyers and engineers working across Edo State, Abuja, Lagos, Akwa Ibom, and Delta State. Our strength comes from combining legal expertise with technical insight to solve complex land challenges from every angle.
-        </p>
-
-    </div>
-</section>
-
-<!--Mission and Vision-->
-<section class="py-20 bg-[var(--light-color)]">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-
-        <div class="card-gold p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
-            <p class="text-gray-700">
-                To protect individuals and organizations from land risks through expert legal and technical support, ensuring every transaction is genuine, lawful, and secure.
+            <h2 class="text-4xl font-bold mb-4">What We Do</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto mb-12">
+                At Land Link Solutions, we combine legal expertise and technical precision to protect your interests in
+                every land and property transaction.
             </p>
-        </div>
 
-        <div class="card-gold p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
-            <p class="text-gray-700">
-                To become Nigeria’s most trusted authority for land and property transactions, setting the standard for transparency, reliability, and dispute-free processes.
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="font-bold mb-3">Advisory & Consultancy</h3>
+                    <p class="text-gray-600">
+                        Professional guidance on land acquisition, documentation, and compliance so you make informed
+                        decisions.
+                    </p>
+                </div>
+
+                <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="font-bold mb-3">Title Investigation & Due Diligence</h3>
+                    <p class="text-gray-600">
+                        We verify ownership, documents, and encumbrances before any commitment is made.
+                    </p>
+                </div>
+
+                <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="font-bold mb-3">Transaction Negotiation</h3>
+                    <p class="text-gray-600">
+                        We represent you to secure fair, transparent, and risk-free property deals.
+                    </p>
+                </div>
+
+                <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="font-bold mb-3">Tenant Background Checks</h3>
+                    <p class="text-gray-600">
+                        We help landlords vet tenants to reduce risk and protect their property.
+                    </p>
+                </div>
+
+                <div class="card-gold p-6 rounded-xl md:col-span-2 lg:col-span-1" data-aos="fade-up"
+                    data-aos-delay="500">
+                    <h3 class="font-bold mb-3">Property Sales & Rentals</h3>
+                    <p class="text-gray-600">
+                        Buy, sell, or rent with confidence. Every listing is fully verified and free from encumbrances.
+                    </p>
+                    <p class="text-[var(--primary-color)] font-medium mt-3">
+                        If it’s with us, it’s genuine.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Who we are section-->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl font-bold mb-6">Who We Are</h2>
+
+            <p class="max-w-3xl mx-auto text-gray-700 text-lg">
+                We are a team of experienced lawyers and engineers working across Edo State, Abuja, Lagos, Akwa Ibom,
+                and Delta State. Our strength comes from combining legal expertise with technical insight to solve
+                complex land challenges from every angle.
             </p>
+
         </div>
+    </section>
 
-    </div>
-</section>
+    <!--Mission and Vision-->
+    <section class="py-20 bg-[var(--light-color)]">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
 
-<section class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up" data-aos-delay="100">
-
-        <h2 class="text-4xl font-bold mb-6">Our Promise</h2>
-
-        <p class="text-gray-700 text-lg leading-relaxed">
-            Whether you’re acquiring land, selling a property, or renting out a building, our goal is simple — to give you complete peace of mind.
-        </p>
-
-        <p class="text-gray-700 text-lg mt-4 leading-relaxed">
-            With a team of legal and engineering professionals behind every transaction, you can be assured that your investment is secure, verified, and protected from risk.
-        </p>
-
-    </div>
-</section>
-
-<!--Why clients trust us section-->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-
-        <h2 class="text-4xl font-bold mb-12">Why Clients Trust Us</h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-
-            <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="font-bold mb-3">Real Experience</h3>
-                <p class="text-gray-600">We’ve handled real land issues, not just theory, so we know what to look for.</p>
+            <div class="card-gold p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                <p class="text-gray-700">
+                    To protect individuals and organizations from land risks through expert legal and technical support,
+                    ensuring every transaction is genuine, lawful, and secure.
+                </p>
             </div>
 
-            <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="font-bold mb-3">Transparent Process</h3>
-                <p class="text-gray-600">No hidden steps, no confusion, you understand everything happening.</p>
-            </div>
-
-            <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="font-bold mb-3">Client Protection First</h3>
-                <p class="text-gray-600">Every decision we make is focused on keeping you safe from risk.</p>
+            <div class="card-gold p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                <p class="text-gray-700">
+                    To become Nigeria’s most trusted authority for land and property transactions, setting the standard
+                    for transparency, reliability, and dispute-free processes.
+                </p>
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up" data-aos-delay="100">
+
+            <h2 class="text-4xl font-bold mb-6">Our Promise</h2>
+
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Whether you’re acquiring land, selling a property, or renting out a building, our goal is simple — to
+                give you complete peace of mind.
+            </p>
+
+            <p class="text-gray-700 text-lg mt-4 leading-relaxed">
+                With a team of legal and engineering professionals behind every transaction, you can be assured that
+                your investment is secure, verified, and protected from risk.
+            </p>
+
+        </div>
+    </section>
+
+    <!--Why clients trust us section-->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl font-bold mb-12">Why Clients Trust Us</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="font-bold mb-3">Real Experience</h3>
+                    <p class="text-gray-600">We’ve handled real land issues, not just theory, so we know what to look
+                        for.</p>
+                </div>
+
+                <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="font-bold mb-3">Transparent Process</h3>
+                    <p class="text-gray-600">No hidden steps, no confusion, you understand everything happening.</p>
+                </div>
+
+                <div class="card-gold p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="font-bold mb-3">Client Protection First</h3>
+                    <p class="text-gray-600">Every decision we make is focused on keeping you safe from risk.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
     <section class="py-20 bg-[var(--primary-color)] relative overflow-hidden">
         <!--  Background Pattern -->
         <div class="absolute inset-0 opacity-10">
@@ -286,26 +366,29 @@
                 </svg>
             </div>
         </div>
-        
-         <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center max-w-4xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-8" style="font-family: 'Playfair Display', serif;">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-8"
+                    style="font-family: 'Playfair Display', serif;">
                     Ready to Work With Land Link Solutions?
                 </h2>
                 <p class="text-white/90 text-xl mb-10">
                     Contact us today for a confidential consultation about your real estate needs.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="contact.html" class="bg-white text-[var(--primary-color)] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors text-center">
+                    <a href="contact.html"
+                        class="bg-white text-[var(--primary-color)] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors text-center">
                         Send A Message
                     </a>
-                    <a href="https://wa.me/2348071903819" target="_blank" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-colors text-center">
+                    <a href="https://wa.me/2348071903819" target="_blank"
+                        class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-colors text-center">
                         Use Whatsapp Instead
                     </a>
                 </div>
                 <p class="text-white/70 mt-8 text-sm">Available 24/7 for your convenience</p>
             </div>
-        </div> 
+        </div>
     </section>
 
     <!-- Footer -->
@@ -316,7 +399,8 @@
                 <div>
                     <div class="flex items-center mb-6">
                         <div class="text-[var(--primary-color)]">
-            <img src="Images/logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+                            <img src="Images/logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain"
+                                loading="lazy">
                         </div>
                         <div class="ml-3">
                             <h1 class="text-xl font-bold font-serif">Land Link</h1>
@@ -324,7 +408,8 @@
                         </div>
                     </div>
                     <p class="text-gray-400 mb-6 leading-relaxed">
-We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.
+                        We help you find, manage, and secure properties with confidence, acting as the trusted bridge
+                        between property owners and buyers.
                     </p>
                     <!-- <div class="flex space-x-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
@@ -346,11 +431,18 @@ We help you find, manage, and secure properties with confidence, acting as the t
                 <div>
                     <h4 class="text-lg font-bold mb-6">Quick Links</h4>
                     <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">About Us</a></li>
-                        <li><a href="properties.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Properties</a></li>
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">About Us</a>
+                        </li>
+                        <li><a href="properties.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Properties</a>
+                        </li>
                         <!-- <li><a href="testimonials.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Testimonials</a></li> -->
-                        <li><a href="contact.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Contact</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -358,37 +450,56 @@ We help you find, manage, and secure properties with confidence, acting as the t
                 <div>
                     <h4 class="text-lg font-bold mb-6">Property Types</h4>
                     <ul class="space-y-3">
-                        <li><a href="properties.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Land</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Premium Apartments</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Commercial Properties</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Investment Opportunities</a></li>
+                        <li><a href="properties.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Land</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Premium
+                                Apartments</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Commercial
+                                Properties</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Investment
+                                Opportunities</a></li>
                     </ul>
                 </div>
 
                 <!-- Newsletter -->
                 <div>
                     <h4 class="text-lg font-bold mb-6">Newsletter</h4>
-                    <p class="text-gray-400 mb-6">Subscribe to receive updates on new properties and market insights.</p>
+                    <p class="text-gray-400 mb-6">Subscribe to receive updates on new properties and market insights.
+                    </p>
                     <div class="flex flex-col space-y-3">
-                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-[var(--primary-color)] focus:outline-none">
+                        <input type="email" placeholder="Your email address"
+                            class="px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-[var(--primary-color)] focus:outline-none">
                         <button class="btn-royal py-3 rounded-lg font-medium cursor-pointer">Subscribe</button>
                     </div>
                 </div>
             </div>
 
             <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-gray-400 mb-2">
+                    CAC Registered Company • RC No. 9441725
+                </p>
+
                 <p class="text-gray-400">
-                    &copy; <span id="year"></span> Land Link Solutions. All rights reserved. | Website Produced By <a href="https://oriarebun-princeton.vercel.app/" target="_blank" class="text-[var(--primary-color)] hover:underline">Oriarebun Princeton</a>
+                    &copy; <span id="year"></span> Land Link Solutions. All rights reserved. |
+                    Website Produced By
+                    <a href="https://oriarebun-princeton.vercel.app/" target="_blank"
+                        class="text-[var(--primary-color)] hover:underline">
+                        Oriarebun Princeton
+                    </a>
                 </p>
             </div>
         </div>
     </footer>
-        <!-- Dark Mode Toggle -->
-<button class="floating-theme-toggle" id="themeToggle" aria-label="Toggle night mode">
-    <i data-lucide="moon"></i>
-</button>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="Js/script.js"></script>
+    <!-- Dark Mode Toggle -->
+    <button class="floating-theme-toggle" id="themeToggle" aria-label="Toggle night mode">
+        <i data-lucide="moon"></i>
+    </button>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="Js/script.js"></script>
 </body>
+
 </html>

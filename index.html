@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <!--Meta tags and SEO optimization-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.">
-    <meta name="keywords" content="real estate, land for sale, property investment, buy land, sell property, Land Link Solutions">
+    <meta name="description"
+        content="We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.">
+    <meta name="keywords"
+        content="real estate, land for sale, property investment, buy land, sell property, Land Link Solutions">
     <meta name="author" content="Land Link Solutions">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Land Link Solutions | Real Estate You Can Trust">
-    <meta property="og:description" content="Connecting you to the best land and property opportunities. Buy, sell, and invest with confidence.">
+    <meta property="og:description"
+        content="Connecting you to the best land and property opportunities. Buy, sell, and invest with confidence.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://landlinksolutions.org">
     <meta property="og:image" content="https://landlinksolutions.org/Images/logo.png">
 
     <!-- Title -->
-    <title>Land Link Solutions | Connecting You With Your Dream Property</title>
+    <title>Home | Land Link Solutions | Connecting You With Your Dream Property</title>
 
     <!--Styling Links-->
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- <link rel="stylesheet" href="Css/styles.css"> -->
     <link rel="stylesheet" href="Css/tailwind.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -45,129 +51,184 @@
             <p style="color: #666;">Connecting you to your dream property</p>
         </div>
     </div>
-    
-    <!-- Navigation -->
-<nav id="navbar" class="sticky-header pt-4 pb-4 px-6 transition-all duration-300">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
 
-        <!-- Logo -->
-        <div class="flex items-center">
-            <img src="Images/nav-logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
-            <div class="ml-3">
-                <h1 class="text-xl font-bold font-serif" style="color: var(--primary-color);">
-                    Land Link
-                </h1>
-                <p class="text-sm text-gray-600">Solutions</p>
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky-header pt-4 pb-4 px-6 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="Images/nav-logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+                <div class="ml-3">
+                    <h1 class="text-xl font-bold font-serif" style="color: var(--primary-color);">
+                        Land Link
+                    </h1>
+                    <p class="text-sm text-gray-600">Solutions</p>
+                </div>
             </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex space-x-8">
+                <a href="#home"
+                    class="nav-link active flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="home" class="w-4 h-4"></i> Home
+                </a>
+
+                <a href="#about"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="info" class="w-4 h-4"></i> About
+                </a>
+
+                <a href="#properties"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="building-2" class="w-4 h-4"></i> Properties
+                </a>
+
+                <!-- <a href="invest.html"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="trending-up" class="w-4 h-4"></i> Invest
+                </a> -->
+
+                <a href="#contact"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="phone" class="w-4 h-4"></i> Contact
+                </a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <a href="https://wa.me/+2348136171294" target="_blank"
+                class="hidden lg:inline-flex btn-royal items-center gap-2 px-5 py-2.5 rounded-full text-sm shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 transform hover:-translate-y-0.5">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                Chat on WhatsApp
+            </a>
+
+            <!-- Mobile Hamburger -->
+            <button id="hamburger" class="lg:hidden flex flex-col gap-1.5 p-2 cursor-pointer" aria-label="Open menu">
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+            </button>
+
         </div>
-        
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8">
-            <a href="#home" class="nav-link active flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="home" class="w-4 h-4"></i> Home
-            </a>
-            <a href="#about" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="info" class="w-4 h-4"></i> About
-            </a>
-            <a href="#properties" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="building-2" class="w-4 h-4"></i> Properties
-            </a>
-            <!-- <a href="#testimonials" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="message-square" class="w-4 h-4"></i> Testimonials
-            </a> -->
-            <a href="invest.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="trending-up" class="w-4 h-4"></i> Invest
-            </a>
-            <a href="#contact" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="phone" class="w-4 h-4"></i> Contact
-            </a>
-        </div>
-        
-        <!-- Mobile Button -->
-        <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-gray-800 focus:outline-none cursor-pointer">
-                <i data-lucide="menu" class="w-8 h-8"></i>
+    </nav>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div id="menu-overlay"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300">
+    </div>
+
+    <!-- ===== MOBILE SIDE MENU ===== -->
+    <div id="side-menu"
+        class="fixed top-0 right-0 h-full w-[320px] max-w-[85vw] bg-white z-[1001] transform  transition-transform duration-300 ease-in-out shadow-2xl shadow-black/50 flex flex-col">
+
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between px-6 py-5 border-b border-gray-700/50">
+            <span class="font-serif text-xl font-bold text-dark-300">
+                Menu
+            </span>
+
+            <button id="menu-close" class="p-2 hover:bg-gray-700/50 rounded-lg transition-colors cursor-pointer"
+                aria-label="Close menu">
+                <i data-lucide="x" class="w-5 h-5 text-dark-300"></i>
             </button>
         </div>
-    </div>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4 px-6 pb-4">
-        <div class="flex flex-col space-y-3">
-            <a href="#home" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="home" class="w-5 h-5"></i> Home
+
+        <!-- Menu Links -->
+        <nav class="flex flex-col py-6 px-4 flex-1 gap-1">
+
+            <a href="#home"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                Home
             </a>
-            <a href="#about" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="info" class="w-5 h-5"></i> About
+
+            <a href="#about"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="info" class="w-5 h-5"></i>
+                About
             </a>
-            <a href="#properties" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="building-2" class="w-5 h-5"></i> Properties
+
+            <a href="#properties"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="building" class="w-5 h-5"></i>
+                Properties
             </a>
-            <!-- <a href="#testimonials" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="message-square" class="w-5 h-5"></i> Testimonials
+
+            <!-- <a href="invest.html"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="trending-up" class="w-5 h-5"></i>
+                Invest
             </a> -->
-            <a href="invest.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="trending-up" class="w-5 h-5"></i> Invest
+
+            <a href="#contact"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+                Contact
             </a>
-            <a href="#contact" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="phone" class="w-5 h-5"></i> Contact
+
+        </nav>
+
+        <!-- Menu Footer -->
+        <div class="px-6 py-5 border-t border-gray-700/50">
+            <a href="https://wa.me/+2348136171294" target="_blank"
+                class="btn-royal  flex items-center justify-center gap-2 w-full bg-gold-500 hover:bg-gold-400 text-dark-900 font-semibold px-5 py-3 rounded-xl transition-all duration-300 shadow-lg shadow-gold-500/20">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                Chat on WhatsApp
             </a>
         </div>
+
     </div>
-</nav>
+    <!-- End of Navigation -->
 
-<!-- Hero Section -->
-<section id="home" class="hero-bg relative min-h-screen flex items-center overflow-hidden">
-    <!-- Soft Glow -->
-    <div class="absolute top-0 right-0 w-72 h-72 bg-[var(--primary-color)] rounded-full blur-3xl opacity-10"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg relative min-h-screen flex items-center overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 w-full hero-content py-12 md:py-4">
 
-    <div class="max-w-7xl mx-auto px-6 w-full hero-content">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div data-aos="fade-right" class="px-8" data-aos-duration="1000">
+                    <h2 class="text-[var(--primary-color)] font-medium mb-2 uppercase tracking-wide">Land Link Solutions
+                    </h2>
 
-            <!-- Left Content -->
-            <div data-aos="fade-right" class="px-8 lg:py-16" data-aos-duration="1000">
-<h2 class="text-[var(--primary-color)] font-medium mb-2 uppercase tracking-wide">Land Link Solutions</h2>
+                    <h1 class="text-4xl lg:text-7xl font-bold leading-tight font-serif mb-6 text-[var(--dark-color)]">
+                        Connecting You
+                        <span class="text-[var(--primary-color)] block">
+                            To Your Dream Property
+                        </span>
+                    </h1>
 
-                <h1 class="text-4xl lg:text-7xl font-bold leading-tight font-serif mb-6 text-[var(--dark-color)]">
-                    Connecting You
-                    <span class="text-[var(--primary-color)] block">
-                        To Your Dream Property
-                    </span>
-                </h1>
+                    <p class="text-md md:text-xl leading-relaxed max-w-xl mb-10 text-gray-700">
+                        We help you find, manage, and secure properties with confidence, acting as the trusted bridge
+                        between property owners and buyers.
+                    </p>
 
-                <p class="text-lg md:text-xl leading-relaxed max-w-xl mb-10 text-gray-700">
-                    We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.
-                </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
 
-                <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#properties"
+                            class="btn-royal px-6 py-4 rounded-xl font-medium text-center flex items-center justify-center">
+                            <span>Explore Properties</span>
 
-                    <a href="#properties"
-                       class="btn-royal px-6 py-4 rounded-xl font-medium text-center flex items-center justify-center">
-                        <span>Explore Properties</span>
+                            <i data-lucide="arrow-right" class="ml-2 w-5 h-5">
+                            </i>
+                        </a>
 
-                        <i data-lucide="arrow-right"
-                           class="ml-2 w-5 h-5">
-                        </i>
-                    </a>
+                        <a href="#contact" class="btn-outline px-6 py-4 rounded-xl font-medium text-center">
+                            Contact Us
+                        </a>
 
-                    <a href="#contact"
-                       class="btn-outline px-6 py-4 rounded-xl font-medium text-center">
-                        Contact Us
-                    </a>
+                    </div>
 
                 </div>
 
-            </div>
+                <!-- Right Spacer -->
+                <div class="hidden md:block"></div>
 
-            <!-- Right Spacer -->
-            <div class="hidden lg:block"></div>
+            </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
@@ -177,8 +238,13 @@
                     About <span class="text-[var(--primary-color)]">Land Link Solutions</span>
                 </h2>
                 <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
-We are a team of experienced lawyers and engineers working across Edo State, Abuja, Lagos, Akwa Ibom, and Delta State, united by one goal, solving the complex challenges involved in land transactions in Nigeria.</p>
-<p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">Land Link Solution Nigeria Limited was created from real experience. While working with clients individually, we kept seeing the same issues, unclear titles, fraudulent sales, disputes, and costly delays. Instead of letting these problems continue, we came together to offer a trusted, complete solution.</p>
+                    We are a team of experienced lawyers and engineers working across Edo State, Abuja, Lagos, Akwa
+                    Ibom, and Delta State, united by one goal, solving the complex challenges involved in land
+                    transactions in Nigeria.</p>
+                <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">Land Link Solution Nigeria Limited was created
+                    from real experience. While working with clients individually, we kept seeing the same issues,
+                    unclear titles, fraudulent sales, disputes, and costly delays. Instead of letting these problems
+                    continue, we came together to offer a trusted, complete solution.</p>
             </div>
 
 
@@ -186,24 +252,33 @@ We are a team of experienced lawyers and engineers working across Edo State, Abu
             <div class="bg-linear-to-br from-(--secondary-color)] to-(--light-color)] rounded-3xl p-4 lg:p-12">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div data-aos="fade-right">
-                        <h3 class="text-3xl font-bold mb-6" style="color: var(--dark-color); font-family: 'Playfair Display', serif;">
-Our Mission is to <span class="text-[var(--primary-color)]">protect clients</span> from land risks through expert legal support
+                        <h3 class="text-3xl font-bold mb-6"
+                            style="color: var(--dark-color); font-family: 'Playfair Display', serif;">
+                            Our Mission is to <span class="text-[var(--primary-color)]">protect clients</span> from land
+                            risks through expert legal support
                         </h3>
                         <p class="text-gray-700 mb-6 text-lg">
-At Land Link Solutions, our mission is to protect individuals and organizations from land risks through expert legal and technical support, ensuring every transaction is genuine, lawful, and free from issues.
+                            At Land Link Solutions, our mission is to protect individuals and organizations from land
+                            risks through expert legal and technical support, ensuring every transaction is genuine,
+                            lawful, and free from issues.
                         </p>
                         <p class="text-gray-700 mb-8 text-lg">
-Our Vision is to become Nigeria’s most trusted authority for land and property transactions, known for delivering secure, transparent, and dispute-free processes, while setting the standard for integrity and reliability in the industry.
+                            Our Vision is to become Nigeria’s most trusted authority for land and property transactions,
+                            known for delivering secure, transparent, and dispute-free processes, while setting the
+                            standard for integrity and reliability in the industry.
                         </p>
-                        <a href="about.html" class="btn-royal px-8 py-3 rounded-lg inline-block font-medium">Learn More</a>
+                        <a href="about.html" class="btn-royal px-8 py-3 rounded-lg inline-block font-medium">Learn
+                            More</a>
                     </div>
                     <div class="relative" data-aos="fade-left">
                         <div class="rounded-2xl overflow-hidden shadow-xl">
                             <img src="Images/dark-logo.png" alt="Office" class="w-full" loading="lazy">
                         </div>
-                        <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-2xl max-w-xs hidden lg:block">
+                        <div
+                            class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-2xl max-w-xs hidden lg:block">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 rounded-full bg-[var(--primary-color)] flex items-center justify-center mr-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-[var(--primary-color)] flex items-center justify-center mr-4">
                                     <i data-lucide="star" class="w-6 h-6 text-white"></i>
                                 </div>
                                 <div>
@@ -211,7 +286,8 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
                                     <p class="text-sm text-gray-600">Client Satisfaction Guaranteed</p>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">"The most professional and trustworthy real estate team we've worked with. Their attention to detail is exceptional."</p>
+                            <p class="text-gray-700 italic">"The most professional and trustworthy real estate team
+                                we've worked with. Their attention to detail is exceptional."</p>
                             <p class="mt-4 text-[var(--primary-color)] font-bold">— David & Sarah Oyinkansola</p>
                         </div>
                     </div>
@@ -228,186 +304,181 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
                     Our <span class="text-[var(--primary-color)]">Properties</span>
                 </h2>
                 <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
-                    Explore our curated collection of exceptional properties, from prime lands to homes and investment opportunities.
+                    Explore our curated collection of exceptional properties, from prime lands to homes and investment
+                    opportunities.
                 </p>
             </div>
 
-  <!-- FILTER -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10" data-aos="fade-up">
+            <!-- FILTER -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10" data-aos="fade-up">
 
-    <select id="locationFilter" class="border rounded-lg p-3 cursor-pointer">
-<option value="all">All Locations</option>
-<option value="benin-city">Benin City</option>
-<option value="lagos">Lagos</option>
-<option value="abuja">Abuja</option>
-<option value="ikeja">Ikeja</option>
-<option value="epe">Epe</option>
-<option value="asaba">Asaba</option>
-<option value="port-harcourt">Port Harcourt</option>
-    </select>
+                <select id="locationFilter" class="border rounded-lg p-3 cursor-pointer">
+                    <option value="all">All Locations</option>
+                    <option value="benin-city">Benin City</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="abuja">Abuja</option>
+                    <option value="ikeja">Ikeja</option>
+                    <option value="epe">Epe</option>
+                    <option value="asaba">Asaba</option>
+                    <option value="port-harcourt">Port Harcourt</option>
+                </select>
 
 
-    <select id="sizeFilter" class="border rounded-lg p-3 cursor-pointer">
-  <option value="all">Any Size</option>
-  <option value="300-600">300 – 600 SQM</option>
-  <option value="600-1000">600 – 1000 SQM</option>
-  <option value="1000-plus">1000+ SQM</option>
-    </select>
+                <select id="sizeFilter" class="border rounded-lg p-3 cursor-pointer">
+                    <option value="all">Any Size</option>
+                    <option value="300-600">300 – 600 SQM</option>
+                    <option value="600-1000">600 – 1000 SQM</option>
+                    <option value="1000-plus">1000+ SQM</option>
+                </select>
 
-    <select id="priceFilter" class="border rounded-lg p-3 cursor-pointer">
-  <option value="all">Any Price</option>
-  <option value="below-10m">Below ₦10M</option>
-  <option value="10m-50m">₦10M – ₦50M</option>
-  <option value="50m-plus">₦50M+</option>
-    </select>
+                <select id="priceFilter" class="border rounded-lg p-3 cursor-pointer">
+                    <option value="all">Any Price</option>
+                    <option value="below-10m">Below ₦10M</option>
+                    <option value="10m-50m">₦10M – ₦50M</option>
+                    <option value="50m-plus">₦50M+</option>
+                </select>
 
-    <button id="filterBtn" class="btn-royal text-white rounded-lg p-3 cursor-pointer">
-      Find Properties
-    </button>
+                <button id="filterBtn" class="btn-royal text-white rounded-lg p-3 cursor-pointer">
+                    Find Properties
+                </button>
 
-  </div>
+            </div>
 
-  <!-- HEADER -->
-  <div class="flex justify-between items-center mb-6" data-aos="zoom-in-up" data-aos-delay="300">
-    <h2 class="text-2xl font-semibold">Featured Lands</h2>
+            <!-- HEADER -->
+            <div class="flex justify-between items-center mb-6" data-aos="zoom-in-up" data-aos-delay="300">
+                <h2 class="text-2xl font-semibold">Featured Lands</h2>
 
-  </div>
+            </div>
 
-  <!-- LAND -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" >
+            <!-- LAND -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- Land Card 1 -->
-    <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="300"
-    data-location="benin-city"
-     data-size="600"
-     data-price="45000000"
-    >
+                <!-- Land Card 1 -->
+                <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up"
+                    data-aos-delay="300" data-location="benin-city" data-size="600" data-price="45000000">
 
-      <div class="relative">
-        <img src="Images/land1.png" class="h-48 w-full object-cover">
+                    <div class="relative">
+                        <img src="Images/land1.png" class="h-48 w-full object-cover">
 
-        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
-          For Sale
-        </span>
-      </div>
+                        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+                            For Sale
+                        </span>
+                    </div>
 
-      <div class="p-5">
+                    <div class="p-5">
 
-        <div class="flex justify-between items-start">
-          <h3 class="font-semibold text-lg">Land 1</h3>
-          <span class="text-green-600 font-bold">₦45,000,000</span>
-        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold text-lg">Land 1</h3>
+                            <span class="text-green-600 font-bold">₦45,000,000</span>
+                        </div>
 
-        <p class="text-sm text-gray-500 mt-1">Obagie, Benin City</p>
+                        <p class="text-sm text-gray-500 mt-1">Obagie, Benin City</p>
 
-        <div class="flex justify-between text-xs text-gray-600 mt-4">
-          <span>600 SQM</span>
-          <span>Residential</span>
-          <span>C of O</span>
-        </div>
+                        <div class="flex justify-between text-xs text-gray-600 mt-4">
+                            <span>600 SQM</span>
+                            <span>Residential</span>
+                            <span>C of O</span>
+                        </div>
 
-        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
-          Best for: Residential, Estate development
-        </div>
+                        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
+                            Best for: Residential, Estate development
+                        </div>
 
-        <button onclick="openPropertyModal('land-1')"
-        class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer">
-          View Details
-        </button>
+                        <button onclick="openPropertyModal('land-1')"
+                            class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer">
+                            View Details
+                        </button>
 
-      </div>
-    </div>
-    <!-- Land Card 2 -->
-    <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="500"
-    data-location="benin-city"
-     data-size="10000"
-     data-price="47000000"
-     >
+                    </div>
+                </div>
+                <!-- Land Card 2 -->
+                <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up"
+                    data-aos-delay="500" data-location="benin-city" data-size="10000" data-price="47000000">
 
-      <div class="relative">
-        <img src="Images/land2.png" class="h-48 w-full object-cover">
-        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
-          For Sale
-        </span>
-      </div>
+                    <div class="relative">
+                        <img src="Images/land2.png" class="h-48 w-full object-cover">
+                        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+                            For Sale
+                        </span>
+                    </div>
 
-      <div class="p-5">
+                    <div class="p-5">
 
-        <div class="flex justify-between items-start">
-          <h3 class="font-semibold text-lg">Land 2</h3>
-          <span class="text-green-600 font-bold">₦47,000,000</span>
-        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold text-lg">Land 2</h3>
+                            <span class="text-green-600 font-bold">₦47,000,000</span>
+                        </div>
 
-        <p class="text-sm text-gray-500 mt-1">NIFOR, Benin City</p>
+                        <p class="text-sm text-gray-500 mt-1">NIFOR, Benin City</p>
 
-        <div class="flex justify-between text-xs text-gray-600 mt-4">
-          <span>10,000 SQM</span>
-          <span>Residential</span>
-          <span>C of O</span>
-        </div>
+                        <div class="flex justify-between text-xs text-gray-600 mt-4">
+                            <span>10,000 SQM</span>
+                            <span>Residential</span>
+                            <span>C of O</span>
+                        </div>
 
-        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
-          Best for: Gated estates, Land banking
-        </div>
+                        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
+                            Best for: Gated estates, Land banking
+                        </div>
 
-        <button class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer" onclick="openPropertyModal('land-2')">
-          View Details
-        </button>
+                        <button
+                            class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer"
+                            onclick="openPropertyModal('land-2')">
+                            View Details
+                        </button>
 
-      </div>
-    </div>
-    <!-- Land Card 3 -->
-    <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up" data-aos-delay="700"
-    data-location="benin-city"
-     data-size="1000"
-     data-price="10000000"
-     > 
+                    </div>
+                </div>
+                <!-- Land Card 3 -->
+                <div class="land-card rounded-2xl overflow-hidden shadow-lg bg-white" data-aos="zoom-in-up"
+                    data-aos-delay="700" data-location="benin-city" data-size="1000" data-price="10000000">
 
-      <div class="relative">
-        <img src="Images/land3.png" class="h-48 w-full object-cover">
-        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
-          For Sale
-        </span>
-      </div>
+                    <div class="relative">
+                        <img src="Images/land3.png" class="h-48 w-full object-cover">
+                        <span class="absolute bottom-3 left-3 bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+                            For Sale
+                        </span>
+                    </div>
 
-      <div class="p-5">
+                    <div class="p-5">
 
-        <div class="flex justify-between items-start">
-          <h3 class="font-semibold text-lg">Land 3</h3>
-          <span class="text-green-600 font-bold">₦10,000,000</span>
-        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold text-lg">Land 3</h3>
+                            <span class="text-green-600 font-bold">₦10,000,000</span>
+                        </div>
 
-        <p class="text-sm text-gray-500 mt-1">Evbuowe, Benin City</p>
+                        <p class="text-sm text-gray-500 mt-1">Evbuowe, Benin City</p>
 
-        <div class="flex justify-between text-xs text-gray-600 mt-4">
-          <span>1000 SQM</span>
-          <span>Commercial</span>
-          <span>C of O</span>
-        </div>
+                        <div class="flex justify-between text-xs text-gray-600 mt-4">
+                            <span>1000 SQM</span>
+                            <span>Commercial</span>
+                            <span>C of O</span>
+                        </div>
 
-        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
-          Best for: Malls, Offices, Commercial builds
-        </div>
+                        <div class="mt-3 text-sm bg-gray-100 p-2 rounded-lg">
+                            Best for: Malls, Offices, Commercial builds
+                        </div>
 
-        <button class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer" onclick="openPropertyModal('land-3')">
-          View Details
-        </button>
+                        <button
+                            class="mt-4 w-full btn-outline px-6 py-3 rounded-lg font-medium flex items-center justify-center cursor-pointer"
+                            onclick="openPropertyModal('land-3')">
+                            View Details
+                        </button>
 
-      </div>
-    </div>
-<div id="noResultsMessage"
-     class="hidden text-center py-16">
-     
-  <h3 class="text-2xl font-semibold text-gray-700">
-    No Properties Found
-  </h3>
+                    </div>
+                </div>
+                <div id="noResultsMessage" class="hidden text-center py-16">
 
-  <p class="text-gray-500 mt-2">
-    Try adjusting your filters or explore other locations.
-  </p>
+                    <h3 class="text-2xl font-semibold text-gray-700">
+                        No Properties Found
+                    </h3>
 
-</div>
-        </div>
+                    <p class="text-gray-500 mt-2">
+                        Try adjusting your filters or explore other locations.
+                    </p>
+
+                </div>
+            </div>
     </section>
 
     <!-- Features Section -->
@@ -418,131 +489,132 @@ Our Vision is to become Nigeria’s most trusted authority for land and property
                     Why <span class="text-[var(--primary-color)]">Choose Us</span>
                 </h2>
                 <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
-We provide reliable, transparent, and professional real estate services designed to protect your interests and make every transaction smooth.
+                    We provide reliable, transparent, and professional real estate services designed to protect your
+                    interests and make every transaction smooth.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Feature 1 -->
-<div class="feature-card relative overflow-hidden text-center">
-    <!-- Background Illustration -->
-    <div class="feature-bg">
-        <img src="Images/secure.png" alt="">
-    </div>
+                <div class="feature-card relative overflow-hidden text-center">
+                    <!-- Background Illustration -->
+                    <div class="feature-bg">
+                        <img src="Images/secure.png" alt="">
+                    </div>
 
-    <!-- Content -->
-    <div class="relative z-10">
+                    <!-- Content -->
+                    <div class="relative z-10">
 
-        <div class="feature-icon">
-            <i data-lucide="shield-check"
-               class="w-10 h-10 text-white">
-            </i>
-        </div>
+                        <div class="feature-icon">
+                            <i data-lucide="shield-check" class="w-10 h-10 text-white">
+                            </i>
+                        </div>
 
-        <h3 class="feature-title">
-            Secure Transactions
-        </h3>
+                        <h3 class="feature-title">
+                            Secure Transactions
+                        </h3>
 
-        <div class="feature-divider"></div>
+                        <div class="feature-divider"></div>
 
-        <p class="feature-text">
-            We carry out proper checks and verification to ensure every property and transaction is legitimate, protecting you from risks and uncertainty.
-        </p>
+                        <p class="feature-text">
+                            We carry out proper checks and verification to ensure every property and transaction is
+                            legitimate, protecting you from risks and uncertainty.
+                        </p>
 
-    </div>
+                    </div>
 
-</div>
+                </div>
 
-<!-- Feature 2 -->
-<div class="feature-card relative overflow-hidden text-center">
+                <!-- Feature 2 -->
+                <div class="feature-card relative overflow-hidden text-center">
 
-    <div class="feature-bg">
-        <img src="Images/speedy.png" alt="">
-    </div>
+                    <div class="feature-bg">
+                        <img src="Images/speedy.png" alt="">
+                    </div>
 
-    <div class="relative z-10">
+                    <div class="relative z-10">
 
-        <div class="feature-icon">
-            <i data-lucide="zap"
-               class="w-10 h-10 text-white">
-            </i>
-        </div>
+                        <div class="feature-icon">
+                            <i data-lucide="zap" class="w-10 h-10 text-white">
+                            </i>
+                        </div>
 
-        <h3 class="feature-title">
-            Speedy Process
-        </h3>
+                        <h3 class="feature-title">
+                            Speedy Process
+                        </h3>
 
-        <div class="feature-divider"></div>
+                        <div class="feature-divider"></div>
 
-        <p class="feature-text">
-            Our streamlined approach removes unnecessary delays, helping you complete property deals quickly and without complications.
-        </p>
+                        <p class="feature-text">
+                            Our streamlined approach removes unnecessary delays, helping you complete property deals
+                            quickly and without complications.
+                        </p>
 
-    </div>
+                    </div>
 
-</div>
-
-
-
-<!-- Feature 3 -->
-<div class="feature-card relative overflow-hidden text-center">
-
-    <div class="feature-bg">
-        <img src="Images/verified.png" alt="">
-    </div>
-
-    <div class="relative z-10">
-
-        <div class="feature-icon">
-            <i data-lucide="badge-check"
-               class="w-10 h-10 text-white">
-            </i>
-        </div>
-
-        <h3 class="feature-title">
-            Verified Properties
-        </h3>
-
-        <div class="feature-divider"></div>
-
-        <p class="feature-text">
-            We connect you only with trusted property owners and verified listings, so you can make decisions with confidence.
-        </p>
-
-    </div>
-
-</div>
+                </div>
 
 
 
-<!-- Feature 4 -->
-<div class="feature-card relative overflow-hidden text-center">
+                <!-- Feature 3 -->
+                <div class="feature-card relative overflow-hidden text-center">
 
-    <div class="feature-bg">
-        <img src="Images/professional.png" alt="">
-    </div>
+                    <div class="feature-bg">
+                        <img src="Images/verified.png" alt="">
+                    </div>
 
-    <div class="relative z-10">
+                    <div class="relative z-10">
 
-        <div class="feature-icon">
-            <i data-lucide="users"
-               class="w-10 h-10 text-white">
-            </i>
-        </div>
+                        <div class="feature-icon">
+                            <i data-lucide="badge-check" class="w-10 h-10 text-white">
+                            </i>
+                        </div>
 
-        <h3 class="feature-title">
-            Professional Support
-        </h3>
+                        <h3 class="feature-title">
+                            Verified Properties
+                        </h3>
 
-        <div class="feature-divider"></div>
+                        <div class="feature-divider"></div>
 
-        <p class="feature-text">
-            Our team guides you through every step, from inquiry to final agreement, ensuring clarity, support, and peace of mind.
-        </p>
+                        <p class="feature-text">
+                            We connect you only with trusted property owners and verified listings, so you can make
+                            decisions with confidence.
+                        </p>
 
-    </div>
+                    </div>
 
-</div>
+                </div>
+
+
+
+                <!-- Feature 4 -->
+                <div class="feature-card relative overflow-hidden text-center">
+
+                    <div class="feature-bg">
+                        <img src="Images/professional.png" alt="">
+                    </div>
+
+                    <div class="relative z-10">
+
+                        <div class="feature-icon">
+                            <i data-lucide="users" class="w-10 h-10 text-white">
+                            </i>
+                        </div>
+
+                        <h3 class="feature-title">
+                            Professional Support
+                        </h3>
+
+                        <div class="feature-divider"></div>
+
+                        <p class="feature-text">
+                            Our team guides you through every step, from inquiry to final agreement, ensuring clarity,
+                            support, and peace of mind.
+                        </p>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -556,7 +628,7 @@ We provide reliable, transparent, and professional real estate services designed
                 </h2>
                 <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
                     Hear what our satisfied clients have to say about their experience with Land Link Solutions.
-                </p>
+                </p>  
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -616,7 +688,8 @@ We provide reliable, transparent, and professional real estate services designed
                     Get In <span class="text-[var(--primary-color)]">Touch</span>
                 </h2>
                 <p class="max-w-3xl mx-auto text-gray-700 mt-4 text-lg">
-Our team is ready to guide you through every step. Whether you're looking to manage a property, find a trusted buyer, or secure a verified investment.
+                    Our team is ready to guide you through every step. Whether you're looking to manage a property, find
+                    a trusted buyer, or secure a verified investment.
                 </p>
             </div>
 
@@ -624,22 +697,33 @@ Our team is ready to guide you through every step. Whether you're looking to man
                 <!-- Contact Form -->
                 <div class="bg-[var(--light-color)] rounded-3xl p-8 md:p-12">
                     <h3 class="text-2xl font-bold mb-6" style="color: var(--dark-color);">Send Us a Message</h3>
-<form action="https://submit-form.com/kT5Fu3Ppa" method="POST" class="space-y-6">
+                    <form action="https://submit-form.com/kT5Fu3Ppa" method="POST" class="space-y-6">
                         <div>
-                            <label for="name" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Full Name</label>
-                            <input type="text" id="name" name="Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all" placeholder="John Doe" required>
+                            <label for="name" class="block text-sm font-medium mb-2"
+                                style="color: var(--cream-text);">Full Name</label>
+                            <input type="text" id="name" name="Full Name"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all"
+                                placeholder="John Doe" required>
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Email Address</label>
-                            <input type="email" id="email" name="Email Address" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all" placeholder="john@example.com" required>
+                            <label for="email" class="block text-sm font-medium mb-2"
+                                style="color: var(--cream-text);">Email Address</label>
+                            <input type="email" id="email" name="Email Address"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all"
+                                placeholder="john@example.com" required>
                         </div>
                         <div>
-                            <label for="phone" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Whatsapp Number</label>
-                            <input type="tel" id="phone" name="Phone Number" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all" placeholder="+1 (234) 567-890">
+                            <label for="phone" class="block text-sm font-medium mb-2"
+                                style="color: var(--cream-text);">Whatsapp Number</label>
+                            <input type="tel" id="phone" name="Phone Number"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all"
+                                placeholder="+1 (234) 567-890">
                         </div>
                         <div>
-                            <label for="inquiry-type" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Inquiry</label>
-                            <select id="inquiry-type" name="Inquiry Type" class="w-full px-4 py-4 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all cursor-pointer">
+                            <label for="inquiry-type" class="block text-sm font-medium mb-2"
+                                style="color: var(--cream-text);">Inquiry</label>
+                            <select id="inquiry-type" name="Inquiry Type"
+                                class="w-full px-4 py-4 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all cursor-pointer">
                                 <option value="">Select Inquiry Type</option>
                                 <option value="Managing My Property">Interested in Managing My Property</option>
                                 <option value="Buying a Property">Interested in Buying Property</option>
@@ -649,10 +733,14 @@ Our team is ready to guide you through every step. Whether you're looking to man
                             </select>
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium mb-2" style="color: var(--cream-text);">Your Message</label>
-                            <textarea id="message" name="Your Message" rows="5" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all" placeholder="Tell us all we need to know ..." required></textarea>
+                            <label for="message" class="block text-sm font-medium mb-2"
+                                style="color: var(--cream-text);">Your Message</label>
+                            <textarea id="message" name="Your Message" rows="5"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-(--primary-color)]/20 transition-all"
+                                placeholder="Tell us all we need to know ..." required></textarea>
                         </div>
-                        <button type="submit" class="btn-royal w-full py-4 rounded-lg font-bold text-lg flex items-center justify-center cursor-pointer">
+                        <button type="submit"
+                            class="btn-royal w-full py-4 rounded-lg font-bold text-lg flex items-center justify-center cursor-pointer">
                             <span>Send Message</span>
                             <i data-lucide="send" class="ml-2 w-5 h-5"></i>
                         </button>
@@ -668,17 +756,20 @@ Our team is ready to guide you through every step. Whether you're looking to man
 
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
                                 <i data-lucide="map-pin" class="w-6 h-6 text-[var(--primary-color)]"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold mb-2" style="color: var(--dark-color);">Our Office</h4>
-                                <p class="text-gray-700">71 Textile Mill Road, by Evwereke junction<br />Benin City, Edo State</p>
+                                <p class="text-gray-700">71 Textile Mill Road, by Evwereke junction<br />Benin City, Edo
+                                    State</p>
                             </div>
                         </div>
 
                         <div class="flex items-start">
-                            <div class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
                                 <i data-lucide="phone" class="w-6 h-6 text-[var(--primary-color)]"></i>
                             </div>
                             <div>
@@ -688,7 +779,8 @@ Our team is ready to guide you through every step. Whether you're looking to man
                         </div>
 
                         <div class="flex items-start">
-                            <div class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
                                 <i data-lucide="mail" class="w-6 h-6 text-[var(--primary-color)]"></i>
                             </div>
                             <div>
@@ -698,126 +790,131 @@ Our team is ready to guide you through every step. Whether you're looking to man
                         </div>
 
                         <div class="flex items-start">
-                            <div class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center mr-4 flex-shrink-0">
                                 <i data-lucide="clock" class="w-6 h-6 text-[var(--primary-color)]"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold mb-2" style="color: var(--dark-color);">Business Hours</h4>
-                                <p class="text-gray-700">Monday - Friday: 9:00 AM - 8:00 PM<br />Saturday: 10:00 AM - 6:00 PM<br />Sunday: 11:00 AM - 4:00 PM</p>
+                                <p class="text-gray-700">Monday - Friday: 9:00 AM - 8:00 PM<br />Saturday: 10:00 AM -
+                                    6:00 PM<br />Sunday: 11:00 AM - 4:00 PM</p>
                             </div>
                         </div>
                     </div>
 
-<a href="https://wa.me/+2348136171294" target="_blank" class="text-[var(--primary-color)] font-bold flex items-center gap-2">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M20.52 3.48A11.86 11.86 0 0012.01 0C5.37 0 .03 5.34.03 11.97c0 2.11.55 4.17 1.6 5.98L0 24l6.2-1.62a11.93 11.93 0 005.8 1.48h.01c6.63 0 11.97-5.34 11.97-11.97 0-3.2-1.25-6.2-3.46-8.41zM12 21.68c-1.8 0-3.55-.48-5.08-1.38l-.36-.21-3.68.96.98-3.59-.23-.37a9.66 9.66 0 01-1.48-5.13c0-5.36 4.36-9.72 9.73-9.72 2.6 0 5.04 1.01 6.87 2.84a9.65 9.65 0 012.84 6.87c0 5.36-4.36 9.73-9.72 9.73zm5.33-7.27c-.29-.14-1.72-.85-1.99-.95-.27-.1-.47-.14-.67.14-.2.29-.77.95-.94 1.15-.17.2-.35.22-.64.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.12-.6.13-.13.29-.35.43-.52.14-.17.19-.29.29-.48.1-.2.05-.36-.02-.5-.07-.14-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.5.07-.76.36-.26.29-1 1-1 2.44 0 1.44 1.03 2.83 1.17 3.03.14.2 2.02 3.08 4.89 4.32.68.29 1.21.46 1.62.59.68.22 1.29.19 1.78.12.54-.08 1.72-.7 1.96-1.38.24-.67.24-1.25.17-1.38-.07-.12-.26-.19-.55-.33z"/>
-    </svg>
+                    <a href="https://wa.me/+2348136171294" target="_blank"
+                        class="text-[var(--primary-color)] font-bold flex items-center gap-2">
 
-    <span><u>Contact us directly on WhatsApp instead?</u></span>
-</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.52 3.48A11.86 11.86 0 0012.01 0C5.37 0 .03 5.34.03 11.97c0 2.11.55 4.17 1.6 5.98L0 24l6.2-1.62a11.93 11.93 0 005.8 1.48h.01c6.63 0 11.97-5.34 11.97-11.97 0-3.2-1.25-6.2-3.46-8.41zM12 21.68c-1.8 0-3.55-.48-5.08-1.38l-.36-.21-3.68.96.98-3.59-.23-.37a9.66 9.66 0 01-1.48-5.13c0-5.36 4.36-9.72 9.73-9.72 2.6 0 5.04 1.01 6.87 2.84a9.65 9.65 0 012.84 6.87c0 5.36-4.36 9.73-9.72 9.73zm5.33-7.27c-.29-.14-1.72-.85-1.99-.95-.27-.1-.47-.14-.67.14-.2.29-.77.95-.94 1.15-.17.2-.35.22-.64.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.12-.6.13-.13.29-.35.43-.52.14-.17.19-.29.29-.48.1-.2.05-.36-.02-.5-.07-.14-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.5.07-.76.36-.26.29-1 1-1 2.44 0 1.44 1.03 2.83 1.17 3.03.14.2 2.02 3.08 4.89 4.32.68.29 1.21.46 1.62.59.68.22 1.29.19 1.78.12.54-.08 1.72-.7 1.96-1.38.24-.67.24-1.25.17-1.38-.07-.12-.26-.19-.55-.33z" />
+                        </svg>
+
+                        <span><u>Contact us directly on WhatsApp instead?</u></span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-<!--PROPERTIES MODAL-->
-<div id="property-modal" class="property-modal">
-  <div class="property-modal-box">
+    <!--PROPERTIES MODAL-->
+    <div id="property-modal" class="property-modal">
+        <div class="property-modal-box">
 
-    <button onclick="closePropertyModal()" class="property-modal-close">×</button>
-<div class="property-video-area" id="video-container">
+            <button onclick="closePropertyModal()" class="property-modal-close">×</button>
+            <div class="property-video-area" id="video-container">
 
-  <!-- THUMBNAIL -->
-  <div class="video-thumbnail" onclick="playVideo()">
-    <img id="property-thumbnail" src="Images/land1.png" alt="preview">
+                <!-- THUMBNAIL -->
+                <div class="video-thumbnail" onclick="playVideo()">
+                    <img id="property-thumbnail" src="Images/land1.png" alt="preview">
 
-    <div class="play-button">
-      ▶
+                    <div class="play-button">
+                        ▶
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="property-modal-body">
+
+                <div class="property-main-info">
+                    <span class="modal-status">For Sale</span>
+
+                    <h2 id="property-title"></h2>
+                    <p id="property-location" class="modal-location"></p>
+
+                    <p id="property-description" class="modal-description"></p>
+
+                    <div class="modal-features">
+                        <div>
+                            <i data-lucide="maximize"></i>
+                            <strong id="property-size"></strong>
+                            <span>Plot Size</span>
+                        </div>
+
+                        <div>
+                            <i data-lucide="home"></i>
+                            <strong id="property-use"></strong>
+                            <span>Land Use</span>
+                        </div>
+
+                        <div>
+                            <i data-lucide="file-text"></i>
+                            <strong id="property-title-type"></strong>
+                            <span>Title</span>
+                        </div>
+
+                        <div>
+                            <i data-lucide="mountain"></i>
+                            <strong id="property-topography"></strong>
+                            <span>Topography</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-highlights">
+                        <h3>Property Highlights</h3>
+                        <ul>
+                            <li>Strategically located in a fast-developing area</li>
+                            <li>Suitable for residential development</li>
+                            <li>Clear documents and verified ownership</li>
+                            <li>Good long-term investment potential</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="property-side-card">
+                    <h3>Price</h3>
+                    <p id="property-price"></p>
+
+                    <div class="side-detail">
+                        <span>Location</span>
+                        <strong id="side-location"></strong>
+                    </div>
+
+                    <div class="side-detail">
+                        <span>Land Size</span>
+                        <strong id="side-size"></strong>
+                    </div>
+
+                    <div class="side-detail">
+                        <span>Land Use</span>
+                        <strong id="side-use"></strong>
+                    </div>
+
+                    <div class="side-detail">
+                        <span>Title</span>
+                        <strong id="side-title-type"></strong>
+                    </div>
+
+                    <!-- <button class="modal-btn outline">Save Property</button> -->
+                    <a href="contact.html" class="modal-btn outline">Contact Us</a>
+                    <a href="https://wa.me/+2348136171294" class="modal-btn whatsapp" target="_blank">Chat on
+                        WhatsApp</a>
+                </aside>
+
+            </div>
+        </div>
     </div>
-  </div>
-
-</div>
-
-    <div class="property-modal-body">
-
-      <div class="property-main-info">
-        <span class="modal-status">For Sale</span>
-
-        <h2 id="property-title"></h2>
-        <p id="property-location" class="modal-location"></p>
-
-        <p id="property-description" class="modal-description"></p>
-
-        <div class="modal-features">
-          <div>
-            <i data-lucide="maximize"></i>
-            <strong id="property-size"></strong>
-            <span>Plot Size</span>
-          </div>
-
-          <div>
-            <i data-lucide="home"></i>
-            <strong id="property-use"></strong>
-            <span>Land Use</span>
-          </div>
-
-          <div>
-            <i data-lucide="file-text"></i>
-            <strong id="property-title-type"></strong>
-            <span>Title</span>
-          </div>
-
-          <div>
-            <i data-lucide="mountain"></i>
-            <strong id="property-topography"></strong>
-            <span>Topography</span>
-          </div>
-        </div>
-
-        <div class="modal-highlights">
-          <h3>Property Highlights</h3>
-          <ul>
-            <li>Strategically located in a fast-developing area</li>
-            <li>Suitable for residential development</li>
-            <li>Clear documents and verified ownership</li>
-            <li>Good long-term investment potential</li>
-          </ul>
-        </div>
-      </div>
-
-      <aside class="property-side-card">
-        <h3>Price</h3>
-        <p id="property-price"></p>
-
-        <div class="side-detail">
-          <span>Location</span>
-          <strong id="side-location"></strong>
-        </div>
-
-        <div class="side-detail">
-          <span>Land Size</span>
-          <strong id="side-size"></strong>
-        </div>
-
-        <div class="side-detail">
-          <span>Land Use</span>
-          <strong id="side-use"></strong>
-        </div>
-
-        <div class="side-detail">
-          <span>Title</span>
-          <strong id="side-title-type"></strong>
-        </div>
-
-        <!-- <button class="modal-btn outline">Save Property</button> -->
-        <a href="contact.html" class="modal-btn outline">Contact Us</a>
-        <a href="https://wa.me/+2348136171294" class="modal-btn whatsapp" target="_blank">Chat on WhatsApp</a>
-      </aside>
-
-    </div>
-  </div>
-</div> 
 
 
     <!-- Footer -->
@@ -828,7 +925,8 @@ Our team is ready to guide you through every step. Whether you're looking to man
                 <div>
                     <div class="flex items-center mb-6">
                         <div class="text-[var(--primary-color)]">
-            <img src="Images/logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+                            <img src="Images/logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain"
+                                loading="lazy">
                         </div>
                         <div class="ml-3">
                             <h1 class="text-xl font-bold font-serif">Land Link</h1>
@@ -836,7 +934,8 @@ Our team is ready to guide you through every step. Whether you're looking to man
                         </div>
                     </div>
                     <p class="text-gray-400 mb-6 leading-relaxed">
-We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.
+                        We help you find, manage, and secure properties with confidence, acting as the trusted bridge
+                        between property owners and buyers.
                     </p>
                     <!-- <div class="flex space-x-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
@@ -858,11 +957,18 @@ We help you find, manage, and secure properties with confidence, acting as the t
                 <div>
                     <h4 class="text-lg font-bold mb-6">Quick Links</h4>
                     <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">About Us</a></li>
-                        <li><a href="properties.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Properties</a></li>
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">About Us</a>
+                        </li>
+                        <li><a href="properties.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Properties</a>
+                        </li>
                         <!-- <li><a href="testimonials.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Testimonials</a></li> -->
-                        <li><a href="contact.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Contact</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -870,47 +976,57 @@ We help you find, manage, and secure properties with confidence, acting as the t
                 <div>
                     <h4 class="text-lg font-bold mb-6">Property Types</h4>
                     <ul class="space-y-3">
-                        <li><a href="properties.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Land</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Premium Apartments</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Commercial Properties</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Investment Opportunities</a></li>
+                        <li><a href="properties.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Land</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Premium
+                                Apartments</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Commercial
+                                Properties</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Investment
+                                Opportunities</a></li>
                     </ul>
                 </div>
 
                 <!-- Newsletter -->
                 <div>
                     <h4 class="text-lg font-bold mb-6">Newsletter</h4>
-                    <p class="text-gray-400 mb-6">Subscribe to receive updates on new properties and market insights.</p>
+                    <p class="text-gray-400 mb-6">Subscribe to receive updates on new properties and market insights.
+                    </p>
                     <div class="flex flex-col space-y-3">
-                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-[var(--primary-color)] focus:outline-none">
+                        <input type="email" placeholder="Your email address"
+                            class="px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-[var(--primary-color)] focus:outline-none">
                         <button class="btn-royal py-3 rounded-lg font-medium cursor-pointer">Subscribe</button>
                     </div>
                 </div>
             </div>
 
-<div class="border-t border-white/10 pt-8 text-center">
-    <p class="text-gray-400 mb-2">
-        CAC Registered Company • RC No. 9441725
-    </p>
+            <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-gray-400 mb-2">
+                    CAC Registered Company • RC No. 9441725
+                </p>
 
-    <p class="text-gray-400">
-        &copy; <span id="year"></span> Land Link Solutions. All rights reserved. |
-        Website Produced By
-        <a href="https://oriarebun-princeton.vercel.app/" target="_blank"
-           class="text-[var(--primary-color)] hover:underline">
-            Oriarebun Princeton
-        </a>
-    </p>
-</div>
+                <p class="text-gray-400">
+                    &copy; <span id="year"></span> Land Link Solutions. All rights reserved. |
+                    Website Produced By
+                    <a href="https://oriarebun-princeton.vercel.app/" target="_blank"
+                        class="text-[var(--primary-color)] hover:underline">
+                        Oriarebun Princeton
+                    </a>
+                </p>
+            </div>
         </div>
     </footer>
     <!-- Dark Mode Toggle -->
-<button class="floating-theme-toggle" id="themeToggle" aria-label="Toggle night mode">
-    <i data-lucide="moon"></i>
-</button>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="Js/properties.js"></script>
-<script src="Js/script.js"></script>
+    <button class="floating-theme-toggle" id="themeToggle" aria-label="Toggle night mode">
+        <i data-lucide="moon"></i>
+    </button>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="Js/properties.js"></script>
+    <script src="Js/script.js"></script>
 </body>
+
 </html>

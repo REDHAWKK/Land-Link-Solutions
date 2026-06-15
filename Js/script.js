@@ -20,17 +20,52 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+// ===== MOBILE MENU LOGIC =====
+// ===== MOBILE MENU LOGIC =====
 
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
+const hamburger = document.getElementById('hamburger');
+const sideMenu = document.getElementById('side-menu');
+const menuOverlay = document.getElementById('menu-overlay');
+const menuClose = document.getElementById('menu-close');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+const body = document.body;
 
-    // Sticky Header
+function openMenu() {
+    sideMenu.classList.add('active');
+    menuOverlay.classList.add('active');
+    body.classList.add('menu-open');
+}
+
+function closeMenu() {
+    sideMenu.classList.remove('active');
+    menuOverlay.classList.remove('active');
+    body.classList.remove('menu-open');
+}
+
+function toggleMenu() {
+    sideMenu.classList.contains('active') ? closeMenu() : openMenu();
+}
+
+// Open/close via hamburger
+hamburger.addEventListener('click', toggleMenu);
+
+// Close via X button
+menuClose.addEventListener('click', closeMenu);
+
+// Close via overlay click
+menuOverlay.addEventListener('click', closeMenu);
+
+// Close when clicking any nav link
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+// Close on ESC key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+});
+
+// Sticky Header
     const navbar = document.getElementById('navbar');
 
     if (navbar) {
