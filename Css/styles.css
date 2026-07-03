@@ -157,7 +157,7 @@ body.dark-mode #hamburger span {
         rgba(250,248,245,0.45) 55%,
         rgba(250,248,245,0.08) 72%
     ),
-    url("../Images/hero.png");
+    url("../Images/hero.jpg");
 
     background-size: cover;
     background-position: center right;
@@ -184,7 +184,7 @@ body.dark-mode .hero-bg::before{
         rgba(17,17,17,0.82) 48%,
         rgba(17,17,17,0.35) 70%
     ),
-    url("../Images/hero-dark.png");
+    url("../Images/hero-dark.jpg");
 }
 /* Content stays above */
 .hero-content{
@@ -204,7 +204,7 @@ body.dark-mode .hero-bg::before{
             rgba(250,248,245,0.45) 65%,
             rgba(250,248,245,0.20) 100%
         ),
-        url("../Images/hero.png");
+        url("../Images/hero.jpg");
 
         background-size: cover;
         background-position: center;
@@ -225,7 +225,7 @@ body.dark-mode .hero-bg::before{
             rgba(17,17,17,0.55) 35%,
             rgba(17,17,17,0.25) 100%
         ),
-        url("../Images/hero-dark.png");
+        url("../Images/hero-dark.jpg");
 
         background-size: cover;
         background-position: center center;

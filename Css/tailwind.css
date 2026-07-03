@@ -1144,11 +1144,6 @@
       outline-style: none;
     }
   }
-  .active\:flex {
-    &:active {
-      display: flex;
-    }
-  }
   .active\:bg-\[var\(--primary-color\)\] {
     &:active {
       background-color: var(--primary-color);
@@ -1256,6 +1251,12 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  .md\:text-7xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
   .md\:text-xl {
     @media (width >= 48rem) {
       font-size: var(--text-xl);
@@ -1315,12 +1316,6 @@
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
-    }
-  }
-  .lg\:text-7xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-7xl);
-      line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
   }
 }
@@ -1448,7 +1443,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient( 90deg, rgba(250,248,245,1) 0%, rgba(250,248,245,0.97) 22%, rgba(250,248,245,0.90) 38%, rgba(250,248,245,0.45) 55%, rgba(250,248,245,0.08) 72% ), url("../Images/hero.png");
+  background: linear-gradient( 90deg, rgba(250,248,245,1) 0%, rgba(250,248,245,0.97) 22%, rgba(250,248,245,0.90) 38%, rgba(250,248,245,0.45) 55%, rgba(250,248,245,0.08) 72% ), url("../Images/hero.jpg");
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -1464,7 +1459,7 @@ body.dark-mode .hero-bg {
   background: #111111;
 }
 body.dark-mode .hero-bg::before {
-  background: linear-gradient( 90deg, rgba(17,17,17,1) 0%, rgba(17,17,17,0.96) 28%, rgba(17,17,17,0.82) 48%, rgba(17,17,17,0.35) 70% ), url("../Images/hero-dark.png");
+  background: linear-gradient( 90deg, rgba(17,17,17,1) 0%, rgba(17,17,17,0.96) 28%, rgba(17,17,17,0.82) 48%, rgba(17,17,17,0.35) 70% ), url("../Images/hero-dark.jpg");
 }
 .hero-content {
   position: relative;
@@ -1472,7 +1467,7 @@ body.dark-mode .hero-bg::before {
 }
 @media (max-width: 992px) {
   .hero-bg::before {
-    background: linear-gradient( 180deg, rgba(250,248,245,0.88) 0%, rgba(250,248,245,0.72) 35%, rgba(250,248,245,0.45) 65%, rgba(250,248,245,0.20) 100% ), url("../Images/hero.png");
+    background: linear-gradient( 180deg, rgba(250,248,245,0.88) 0%, rgba(250,248,245,0.72) 35%, rgba(250,248,245,0.45) 65%, rgba(250,248,245,0.20) 100% ), url("../Images/hero.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -1483,7 +1478,7 @@ body.dark-mode .hero-bg::before {
     align-items: flex-start;
   }
   body.dark-mode .hero-bg::before {
-    background: linear-gradient( 180deg, rgba(17,17,17,0.80) 0%, rgba(17,17,17,0.55) 35%, rgba(17,17,17,0.25) 100% ), url("../Images/hero-dark.png");
+    background: linear-gradient( 180deg, rgba(17,17,17,0.80) 0%, rgba(17,17,17,0.55) 35%, rgba(17,17,17,0.25) 100% ), url("../Images/hero-dark.jpg");
     background-size: cover;
     background-position: center center;
   }
