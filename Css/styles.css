@@ -7,13 +7,17 @@
             --light-color: #faf8f5;
             --cream-text: #5a5a5a;
         }
-        html{
-            overflow-x: hidden !important;
-        }
+        html,
         body {
+            width: 100%;
+            overflow-x: clip;
+        }
+        
+       body {
             font-family: 'Poppins', sans-serif;
             color: var(--cream-text);
             background-color: var(--light-color);
+            overflow-x: hidden; /* fallback */
         }
         .nav-link {
     position: relative;
@@ -103,7 +107,10 @@ body.dark-mode #hamburger span {
             color: white;
             box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
         }
-        
+        img{
+            max-width:100%;
+            height:auto;
+        }
         .card-gold {
             transition: all 0.5s ease;
             border: 1px solid rgba(212, 175, 55, 0.2);
