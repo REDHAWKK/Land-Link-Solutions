@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <!--Meta tags and SEO optimization-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Invest with Land Link Solutions. We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.">
-    <meta name="keywords" content="real estate, land for sale, property investment, buy land, sell property, Land Link Solutions">
+    <meta name="description"
+        content="Invest with Land Link Solutions. We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.">
+    <meta name="keywords"
+        content="real estate, land for sale, property investment, buy land, sell property, Land Link Solutions">
     <meta name="author" content="Land Link Solutions">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Land Link Solutions | Real Estate You Can Trust">
-    <meta property="og:description" content="Invest with Land Link Solutions. Connecting you to the best land and property opportunities. Buy, sell, and invest with confidence.">
+    <meta property="og:description"
+        content="Invest with Land Link Solutions. Connecting you to the best land and property opportunities. Buy, sell, and invest with confidence.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourdomain.com">
     <meta property="og:image" content="https://yourdomain.com/images/real-estate-preview.jpg">
@@ -21,12 +25,15 @@
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="Css/styles.css">
     <link rel="stylesheet" href="Css/tailwind.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
+
 <body class="antialiased">
     <!-- Loader -->
     <div class="loader">
@@ -36,219 +43,161 @@
             <p style="color: #666;">Connecting you with your dream property</p>
         </div>
     </div>
-    
-<!-- Navigation -->
-<nav id="navbar" class="fixed-header pt-4 pb-4 px-6 transition-all duration-300">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
 
-        <!-- Logo -->
-        <div class="flex items-center">
-            <img src="Images/nav-logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
-            <div class="ml-3">
-                <h1 class="text-xl font-bold font-serif" style="color: var(--primary-color);">
-                    Land Link
-                </h1>
-                <p class="text-sm text-gray-600">Solutions</p>
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed-header pt-4 pb-4 px-6 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="Images/nav-logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+                <div class="ml-3">
+                    <h1 class="text-xl font-bold font-serif" style="color: var(--primary-color);">
+                        Land Link
+                    </h1>
+                    <p class="text-sm text-gray-600">Solutions</p>
+                </div>
             </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex space-x-8">
+                <a href="#home"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="home" class="w-4 h-4"></i> Home
+                </a>
+
+                <a href="#about"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="info" class="w-4 h-4"></i> About
+                </a>
+
+                <a href="#properties"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="building-2" class="w-4 h-4"></i> Properties
+                </a>
+
+                <!-- <a href="invest.html "
+                    class="nav-link active flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="trending-up" class="w-4 h-4"></i> Invest
+                </a> -->
+
+                <a href="#contact"
+                    class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
+                    <i data-lucide="phone" class="w-4 h-4"></i> Contact
+                </a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <a href="https://wa.me/+2348136171294" target="_blank"
+                class="hidden lg:inline-flex btn-royal items-center gap-2 px-5 py-2.5 rounded-full text-sm shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 transform hover:-translate-y-0.5">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                Chat on WhatsApp
+            </a>
+
+            <!-- Mobile Hamburger -->
+            <button id="hamburger" class="lg:hidden flex flex-col gap-1.5 p-2 cursor-pointer" aria-label="Open menu">
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+                <span class="block w-7 h-0.5 bg-black rounded-full"></span>
+            </button>
+
         </div>
-        
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8">
-            <a href="index.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="home" class="w-4 h-4"></i> Home
-            </a>
-            <a href="about.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="info" class="w-4 h-4"></i> About
-            </a>
-            <a href="properties.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="building-2" class="w-4 h-4"></i> Properties
-            </a>
-            <!-- <a href="testimonials.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="message-square" class="w-4 h-4"></i> Testimonials
-            </a> -->
-            <a href="invest.html" class="nav-link active flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="trending-up" class="w-4 h-4"></i> Invest
-            </a>
-            <a href="contact.html" class="flex items-center gap-2 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium">
-                <i data-lucide="phone" class="w-4 h-4"></i> Contact
-            </a>
-        </div>
-        
-        <!-- Mobile Button -->
-        <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-gray-800 focus:outline-none cursor-pointer">
-                <i data-lucide="menu" class="w-8 h-8"></i>
+    </nav>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div id="menu-overlay"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300">
+    </div>
+
+    <!-- ===== MOBILE SIDE MENU ===== -->
+    <div id="side-menu"
+        class="fixed top-0 right-0 h-full w-[320px] max-w-[85vw] bg-white z-[1001] transform  transition-transform duration-300 ease-in-out shadow-2xl shadow-black/50 flex flex-col">
+
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between px-6 py-5 border-b border-gray-700/50">
+            <span class="font-serif text-xl font-bold text-dark-300">
+                Menu
+            </span>
+
+            <button id="menu-close" class="p-2 hover:bg-gray-700/50 rounded-lg transition-colors cursor-pointer"
+                aria-label="Close menu">
+                <i data-lucide="x" class="w-5 h-5 text-dark-300"></i>
             </button>
         </div>
-    </div>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4 px-6 pb-4">
-        <div class="flex flex-col space-y-3">
-            <a href="index.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="home" class="w-5 h-5"></i> Home
+
+        <!-- Menu Links -->
+        <nav class="flex flex-col py-6 px-4 flex-1 gap-1">
+
+            <a href="#home"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                Home
             </a>
-            <a href="about.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="info" class="w-5 h-5"></i> About
+
+            <a href="#about"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="info" class="w-5 h-5"></i>
+                About
             </a>
-            <a href="properties.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="building-2" class="w-5 h-5"></i> Properties
+
+            <a href="#properties"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="building" class="w-5 h-5"></i>
+                Properties
             </a>
-            <!-- <a href="testimonials.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="message-square" class="w-5 h-5"></i> Testimonials
+
+            <!-- <a href="invest.html"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="trending-up" class="w-5 h-5"></i>
+                Invest
             </a> -->
-            <a href="invest.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="trending-up" class="w-5 h-5"></i> Invest
+
+            <a href="#contact"
+                class="mobile-nav-link flex items-center gap-3 px-4 py-3.5 rounded-xl text-dark-300 hover:text-gold-400 hover:bg-dark-700/50 transition-all duration-300 font-medium">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+                Contact
             </a>
-            <a href="contact.html" class="flex items-center gap-3 text-gray-800 hover:text-[var(--primary-color)] transition-all font-medium py-2">
-                <i data-lucide="phone" class="w-5 h-5"></i> Contact
+
+        </nav>
+
+        <!-- Menu Footer -->
+        <div class="px-6 py-5 border-t border-gray-700/50">
+            <a href="https://wa.me/+2348136171294" target="_blank"
+                class="btn-royal  flex items-center justify-center gap-2 w-full bg-gold-500 hover:bg-gold-400 text-dark-900 font-semibold px-5 py-3 rounded-xl transition-all duration-300 shadow-lg shadow-gold-500/20">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                Chat on WhatsApp
             </a>
         </div>
-    </div>
-</nav>
 
-<!--Hero Section-->
-<section class="pt-20 pb-20 hero-pattern text-center">
-    <div class="max-w-4xl mx-auto px-6">
-        <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: var(--dark-color);">
-            Invest in <span class="text-[var(--primary-color)]">Real Estate</span> With Confidence
-        </h1>
-        <p class="text-lg text-gray-700">
-            We help you identify, secure, and grow profitable real estate investments. From land banking to high-value properties, your money works smarter with us.        </p>
     </div>
-</section>
-<!-- Investment Plans -->
-<section id="plans" class="py-20 bg-(--light-color)]">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="section-title text-4xl font-bold">Investment Options</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                Choose an investment path that fits your goals and budget.
+    <!-- End of Navigation -->
+    <main class="min-h-screen flex items-center justify-center px-6 py-32 bg-[var(--light-color)]">
+
+        <div
+            class="max-w-xl w-full text-center bg-white dark:bg-[#1c1c1c] rounded-3xl shadow-xl border border-[rgba(212,175,55,.15)] p-12">
+
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[rgba(212,175,55,.12)] mb-8">
+                <i data-lucide="construction" class="w-10 h-10 text-[var(--primary-color)]"></i>
+            </div>
+
+            <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Coming Soon
+            </h1>
+
+            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                We're currently preparing this page to provide you with a better experience.
+                Please check back soon.
             </p>
-        </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-
-            <!-- Plan 1 -->
-            <div class="card-gold p-8 rounded-2xl text-center">
-                <h3 class="text-2xl font-bold mb-4">Land Banking</h3>
-                <p class="text-gray-600 mb-6">Buy land in developing areas and watch its value grow over time.</p>
-                <ul class="text-gray-600 space-y-2 mb-6">
-                    <li>✔ Long-term appreciation</li>
-                    <li>✔ Low entry cost</li>
-                    <li>✔ High resale value</li>
-                </ul>
-                <a href="#contact" class="btn-outline px-6 py-3 rounded-lg inline-block">Get Started</a>
-            </div>
-
-            <!-- Plan 2 -->
-            <div class="card-gold p-8 rounded-2xl text-center border-2 border-[var(--primary-color)]">
-                <h3 class="text-2xl font-bold mb-4">Rental Investment</h3>
-                <p class="text-gray-600 mb-6">Earn steady income through rental properties.</p>
-                <ul class="text-gray-600 space-y-2 mb-6">
-                    <li>✔ Monthly cash flow</li>
-                    <li>✔ Property appreciation</li>
-                    <li>✔ Passive income</li>
-                </ul>
-                <a href="#contact" class="btn-royal px-6 py-3 rounded-lg inline-block">Invest Now</a>
-            </div>
-
-            <!-- Plan 3 -->
-            <div class="card-gold p-8 rounded-2xl text-center">
-                <h3 class="text-2xl font-bold mb-4">Property Flipping</h3>
-                <p class="text-gray-600 mb-6">Buy, improve, and resell properties for profit.</p>
-                <ul class="text-gray-600 space-y-2 mb-6">
-                    <li>✔ Short-term gains</li>
-                    <li>✔ Value addition strategy</li>
-                    <li>✔ High profit margin</li>
-                </ul>
-                <a href="#contact" class="btn-outline px-6 py-3 rounded-lg inline-block">Learn More</a>
-            </div>
+            <a href="index.html" class="btn-royal inline-flex items-center gap-2 px-8 py-3 rounded-full">
+                <i data-lucide="arrow-left"></i>
+                Back to Home
+            </a>
 
         </div>
-    </div>
-</section>
 
+    </main>
 
-
-<!-- Process Section -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="section-title text-4xl font-bold">How It Works</h2>
-        </div>
-
-        <div class="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-                <div class="feature-icon">1</div>
-                <h3 class="font-bold mt-4">Consultation</h3>
-                <p class="text-gray-600">We understand your goals</p>
-            </div>
-            <div>
-                <div class="feature-icon">2</div>
-                <h3 class="font-bold mt-4">Property Selection</h3>
-                <p class="text-gray-600">We match you with the best deals</p>
-            </div>
-            <div>
-                <div class="feature-icon">3</div>
-                <h3 class="font-bold mt-4">Secure Purchase</h3>
-                <p class="text-gray-600">Safe and verified transactions</p>
-            </div>
-            <div>
-                <div class="feature-icon">4</div>
-                <h3 class="font-bold mt-4">Grow Returns</h3>
-                <p class="text-gray-600">Watch your investment grow</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Why Invest Section -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="section-title text-4xl font-bold">Why Invest With Us</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                We don’t just sell property — we help you build long-term wealth through smart real estate decisions.
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="card-gold p-8 rounded-2xl text-center">
-                <i data-lucide="trending-up" class="w-10 h-10 mx-auto mb-4 text-[var(--primary-color)]"></i>
-                <h3 class="text-xl font-bold mb-3">High ROI Opportunities</h3>
-                <p class="text-gray-600">We identify properties with strong appreciation potential and rental income.</p>
-            </div>
-
-            <div class="card-gold p-8 rounded-2xl text-center">
-                <i data-lucide="shield-check" class="w-10 h-10 mx-auto mb-4 text-[var(--primary-color)]"></i>
-                <h3 class="text-xl font-bold mb-3">Secure Investments</h3>
-                <p class="text-gray-600">Every property is verified and legally checked to protect your investment.</p>
-            </div>
-
-            <div class="card-gold p-8 rounded-2xl text-center">
-                <i data-lucide="users" class="w-10 h-10 mx-auto mb-4 text-[var(--primary-color)]"></i>
-                <h3 class="text-xl font-bold mb-3">Expert Guidance</h3>
-                <p class="text-gray-600">We guide you from entry to exit strategy with professional insight.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="py-20 hero-pattern text-center">
-    <div class="max-w-3xl mx-auto px-6">
-        <h2 class="text-4xl font-bold mb-6">
-            Ready to Start Building Wealth?
-        </h2>
-        <p class="text-gray-700 mb-8">
-            Let’s help you make your first or next smart real estate investment.
-        </p>
-        <a href="#contact" class="btn-royal px-10 py-4 rounded-lg font-bold inline-flex items-center">
-            Talk to an Expert
-            <i data-lucide="phone" class="ml-2 w-5 h-5"></i>
-        </a>
-    </div>
-</section>
     <!-- Footer -->
     <footer class="footer-royal text-white pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-6">
@@ -257,7 +206,8 @@
                 <div>
                     <div class="flex items-center mb-6">
                         <div class="text-[var(--primary-color)]">
-            <img src="Images/logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain" loading="lazy">
+                            <img src="Images/logo.png" alt="Land Link Logo" class="w-12 h-12 object-contain"
+                                loading="lazy">
                         </div>
                         <div class="ml-3">
                             <h1 class="text-xl font-bold font-serif">Land Link</h1>
@@ -265,7 +215,8 @@
                         </div>
                     </div>
                     <p class="text-gray-400 mb-6 leading-relaxed">
-We help you find, manage, and secure properties with confidence, acting as the trusted bridge between property owners and buyers.
+                        We help you find, manage, and secure properties with confidence, acting as the trusted bridge
+                        between property owners and buyers.
                     </p>
                     <!-- <div class="flex space-x-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors">
@@ -287,11 +238,18 @@ We help you find, manage, and secure properties with confidence, acting as the t
                 <div>
                     <h4 class="text-lg font-bold mb-6">Quick Links</h4>
                     <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">About Us</a></li>
-                        <li><a href="properties.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Properties</a></li>
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">About Us</a>
+                        </li>
+                        <li><a href="properties.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Properties</a>
+                        </li>
                         <!-- <li><a href="testimonials.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Testimonials</a></li> -->
-                        <li><a href="contact.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Contact</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -299,19 +257,28 @@ We help you find, manage, and secure properties with confidence, acting as the t
                 <div>
                     <h4 class="text-lg font-bold mb-6">Property Types</h4>
                     <ul class="space-y-3">
-                        <li><a href="properties.html" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Land</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Premium Apartments</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Commercial Properties</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Investment Opportunities</a></li>
+                        <li><a href="properties.html"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Land</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Premium
+                                Apartments</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Commercial
+                                Properties</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-[var(--primary-color)] transition-colors">Investment
+                                Opportunities</a></li>
                     </ul>
                 </div>
 
                 <!-- Newsletter -->
                 <div>
                     <h4 class="text-lg font-bold mb-6">Newsletter</h4>
-                    <p class="text-gray-400 mb-6">Subscribe to receive updates on new properties and market insights.</p>
+                    <p class="text-gray-400 mb-6">Subscribe to receive updates on new properties and market insights.
+                    </p>
                     <div class="flex flex-col space-y-3">
-                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-[var(--primary-color)] focus:outline-none">
+                        <input type="email" placeholder="Your email address"
+                            class="px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:border-[var(--primary-color)] focus:outline-none">
                         <button class="btn-royal py-3 rounded-lg font-medium cursor-pointer">Subscribe</button>
                     </div>
                 </div>
@@ -319,17 +286,20 @@ We help you find, manage, and secure properties with confidence, acting as the t
 
             <div class="border-t border-white/10 pt-8 text-center">
                 <p class="text-gray-400">
-                    &copy; <span id="year"></span> Land Link Solutions. All rights reserved. | Website Produced By <a href="https://oriarebun-princeton.vercel.app/" target="_blank" class="text-[var(--primary-color)] hover:underline">Oriarebun Princeton</a>
+                    &copy; <span id="year"></span> Land Link Solutions. All rights reserved. | Website Produced By <a
+                        href="https://oriarebun-princeton.vercel.app/" target="_blank"
+                        class="text-[var(--primary-color)] hover:underline">Oriarebun Princeton</a>
                 </p>
             </div>
         </div>
     </footer>
-        <!-- Dark Mode Toggle -->
-<button class="floating-theme-toggle" id="themeToggle" aria-label="Toggle night mode">
-    <i data-lucide="moon"></i>
-</button>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="Js/script.js"></script>
+    <!-- Dark Mode Toggle -->
+    <button class="floating-theme-toggle" id="themeToggle" aria-label="Toggle night mode">
+        <i data-lucide="moon"></i>
+    </button>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="Js/script.js"></script>
 </body>
+
 </html>
