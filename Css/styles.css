@@ -18,6 +18,7 @@
             color: var(--cream-text);
             background-color: var(--light-color);
             overflow-x: hidden; /* fallback */
+            padding-top:88px;
         }
         .nav-link {
     position: relative;
@@ -276,19 +277,21 @@ body.dark-mode .hero-bg::before{
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
         }
         
-        .sticky-header {
-            position: sticky;
-            top: -100px;
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             z-index: 1000;
-            background: rgba(250, 248, 245, 0.95);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        
+            background: transparent;
+            transition: all .3s ease;
         }
         
-        .sticky-header.scrolled {
-            top: 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        .fixed-header.scrolled {
+            background: rgba(250,248,245,.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(0,0,0,.1);
         }
         
         .search-input {
@@ -770,7 +773,7 @@ body.dark-mode .bg-white {
     background-color: #101010 !important;
 }
 
-body.dark-mode .sticky-header {
+body.dark-mode .fixed-header {
     background: rgba(17, 17, 17, 0.95);
 }
 

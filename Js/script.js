@@ -65,7 +65,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeMenu();
 });
 
-// Sticky Header
+// Fixed Header
     const navbar = document.getElementById('navbar');
 
     if (navbar) {
